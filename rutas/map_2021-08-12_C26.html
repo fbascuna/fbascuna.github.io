@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_85622c16713c40cd87e8f04767a3a0b4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_85622c16713c40cd87e8f04767a3a0b4" ></div>
+        
+</body>
+<script>    
+    
+            var map_85622c16713c40cd87e8f04767a3a0b4 = L.map(
+                "map_85622c16713c40cd87e8f04767a3a0b4",
+                {
+                    center: [-39.56393297211653, -72.89839069734727],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_85622c16713c40cd87e8f04767a3a0b4);
+
+            
+
+        
+    
+            var tile_layer_1c4357e732d743d4b201da05aa9b0eba = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_85622c16713c40cd87e8f04767a3a0b4);
+        
+    
+            map_85622c16713c40cd87e8f04767a3a0b4.fitBounds(
+                [[-39.56573544894008, -72.90039490352784], [-39.56259454204236, -72.89356331716691]],
+                {}
+            );
+        
+    
+            var marker_cluster_7b03935710a8453d99358d3030c773ca = L.markerClusterGroup(
+                {}
+            );
+            map_85622c16713c40cd87e8f04767a3a0b4.addLayer(marker_cluster_7b03935710a8453d99358d3030c773ca);
+        
+    
+            var marker_48ce5da9cb7d4f6c857ffe8d2ce170ad = L.marker(
+                [-39.56573544894008, -72.89997111450349],
+                {}
+            ).addTo(marker_cluster_7b03935710a8453d99358d3030c773ca);
+        
+    
+            var icon_080c65bbfb3e4c088718c4fdca183a96 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_48ce5da9cb7d4f6c857ffe8d2ce170ad.setIcon(icon_080c65bbfb3e4c088718c4fdca183a96);
+        
+    
+            marker_48ce5da9cb7d4f6c857ffe8d2ce170ad.bindTooltip(
+                `<div>
+                     Maquina: DLS1266-8 Tipo Maq: Snack<br>Cliente: 16669<br>Ruta 5 Sur Km 788, Sector Rucaco, San José De La Mariquina.<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5ac65c0dbad947b284f64d2ead47dbf3 = L.marker(
+                [-39.5657333812404, -72.89986919056092],
+                {}
+            ).addTo(marker_cluster_7b03935710a8453d99358d3030c773ca);
+        
+    
+            var icon_f3882870703544b6a97921588ec66309 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5ac65c0dbad947b284f64d2ead47dbf3.setIcon(icon_f3882870703544b6a97921588ec66309);
+        
+    
+            marker_5ac65c0dbad947b284f64d2ead47dbf3.bindTooltip(
+                `<div>
+                     Maquina: DLS1117-k Tipo Maq: Snack<br>Cliente: 16669<br>Ruta 5 Sur Km 788, Sector Rucaco, San José De La Mariquina.<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a1b5917d1cc147e78aa4aa1879d7bd90 = L.marker(
+                [-39.5657333812404, -72.89986919056092],
+                {}
+            ).addTo(marker_cluster_7b03935710a8453d99358d3030c773ca);
+        
+    
+            var icon_3279e130bf0a49d6a74767a10dfc0402 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a1b5917d1cc147e78aa4aa1879d7bd90.setIcon(icon_3279e130bf0a49d6a74767a10dfc0402);
+        
+    
+            marker_a1b5917d1cc147e78aa4aa1879d7bd90.bindTooltip(
+                `<div>
+                     Maquina: SLM2853-4 Tipo Maq: Liquido<br>Cliente: 16669<br>Ruta 5 Sur Km 788, Sector Rucaco, San José De La Mariquina.<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5c488d4a9bba4b8cb21509e5a6c01378 = L.marker(
+                [-39.5629166849304, -72.90039490352784],
+                {}
+            ).addTo(marker_cluster_7b03935710a8453d99358d3030c773ca);
+        
+    
+            var icon_623313a3f7c0463cb32cb3f53788a078 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5c488d4a9bba4b8cb21509e5a6c01378.setIcon(icon_623313a3f7c0463cb32cb3f53788a078);
+        
+    
+            marker_5c488d4a9bba4b8cb21509e5a6c01378.bindTooltip(
+                `<div>
+                     Maquina: DLS1216-1 Tipo Maq: Snack<br>Cliente: 16669<br>Ruta 5 Sur Km 788, Sector Rucaco, San José De La Mariquina.<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fd885c64ad094170a2e6c70cd9c1675f = L.marker(
+                [-39.5629166849304, -72.90039490352784],
+                {}
+            ).addTo(marker_cluster_7b03935710a8453d99358d3030c773ca);
+        
+    
+            var icon_51418e4901404c31baa9bd7b149c58e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fd885c64ad094170a2e6c70cd9c1675f.setIcon(icon_51418e4901404c31baa9bd7b149c58e5);
+        
+    
+            marker_fd885c64ad094170a2e6c70cd9c1675f.bindTooltip(
+                `<div>
+                     Maquina: SLM2870-4 Tipo Maq: Liquido<br>Cliente: 16669<br>Ruta 5 Sur Km 788, Sector Rucaco, San José De La Mariquina.<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9c827f62d3084935ac10e1929f65b553 = L.marker(
+                [-39.56259454204236, -72.89893578182374],
+                {}
+            ).addTo(marker_cluster_7b03935710a8453d99358d3030c773ca);
+        
+    
+            var icon_f0e5b595463d4840a93001e889d92ba4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9c827f62d3084935ac10e1929f65b553.setIcon(icon_f0e5b595463d4840a93001e889d92ba4);
+        
+    
+            marker_9c827f62d3084935ac10e1929f65b553.bindTooltip(
+                `<div>
+                     Maquina: 32827424 Tipo Maq: Snack<br>Cliente: 16669<br>Ruta 5 Sur Km 788, Sector Rucaco, San José De La Mariquina.<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_28640d1345b1485e8637c59a2419e601 = L.marker(
+                [-39.56259454204236, -72.89893578182374],
+                {}
+            ).addTo(marker_cluster_7b03935710a8453d99358d3030c773ca);
+        
+    
+            var icon_eb22bdd5b74740afa5386aa298105c72 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_28640d1345b1485e8637c59a2419e601.setIcon(icon_eb22bdd5b74740afa5386aa298105c72);
+        
+    
+            marker_28640d1345b1485e8637c59a2419e601.bindTooltip(
+                `<div>
+                     Maquina: SLM3134-4 Tipo Maq: Liquido<br>Cliente: 16669<br>Ruta 5 Sur Km 788, Sector Rucaco, San José De La Mariquina.<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0482647ed5f048cc9eee17e9abc79e9a = L.marker(
+                [-39.56356846584941, -72.89356331716691],
+                {}
+            ).addTo(marker_cluster_7b03935710a8453d99358d3030c773ca);
+        
+    
+            var icon_3b75d75b04d64722b7431868ff401c6f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0482647ed5f048cc9eee17e9abc79e9a.setIcon(icon_3b75d75b04d64722b7431868ff401c6f);
+        
+    
+            marker_0482647ed5f048cc9eee17e9abc79e9a.bindTooltip(
+                `<div>
+                     Maquina: SLM2052-6 Tipo Maq: Liquido<br>Cliente: 16669<br>Ruta 5 Sur Km 788, Sector Rucaco, San José De La Mariquina.<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_63054295f95847bbb719442b8eb7578d = L.marker(
+                [-39.56360361783298, -72.89358209263001],
+                {}
+            ).addTo(marker_cluster_7b03935710a8453d99358d3030c773ca);
+        
+    
+            var icon_024df6af26934e36b561c7abaae2deea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_63054295f95847bbb719442b8eb7578d.setIcon(icon_024df6af26934e36b561c7abaae2deea);
+        
+    
+            marker_63054295f95847bbb719442b8eb7578d.bindTooltip(
+                `<div>
+                     Maquina: DLS1231-5 Tipo Maq: Snack<br>Cliente: 16669<br>Ruta 5 Sur Km 788, Sector Rucaco, San José De La Mariquina.<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
