@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_97674d1e81b74920bda52b9bcb695ced {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_97674d1e81b74920bda52b9bcb695ced" ></div>
+        
+</body>
+<script>    
+    
+            var map_97674d1e81b74920bda52b9bcb695ced = L.map(
+                "map_97674d1e81b74920bda52b9bcb695ced",
+                {
+                    center: [-33.384210312316746, -70.53059327726983],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_97674d1e81b74920bda52b9bcb695ced);
+
+            
+
+        
+    
+            var tile_layer_fc74671cc6b44fd59deb5a218ff91ccf = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_97674d1e81b74920bda52b9bcb695ced);
+        
+    
+            map_97674d1e81b74920bda52b9bcb695ced.fitBounds(
+                [[-33.3855, -70.5313936896881], [-33.38360980683661, -70.52894215064849]],
+                {}
+            );
+        
+    
+            var marker_cluster_ae6f0a4c571640ff929b4e9a0a76d990 = L.markerClusterGroup(
+                {}
+            );
+            map_97674d1e81b74920bda52b9bcb695ced.addLayer(marker_cluster_ae6f0a4c571640ff929b4e9a0a76d990);
+        
+    
+            var marker_4945858dd76d462092e5cdf9dddfa765 = L.marker(
+                [-33.38372626901342, -70.53063998895492],
+                {}
+            ).addTo(marker_cluster_ae6f0a4c571640ff929b4e9a0a76d990);
+        
+    
+            var icon_9f0932416eb044ebb39d2207eba52537 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4945858dd76d462092e5cdf9dddfa765.setIcon(icon_9f0932416eb044ebb39d2207eba52537);
+        
+    
+            marker_4945858dd76d462092e5cdf9dddfa765.bindTooltip(
+                `<div>
+                     Maquina: CTO1094-5 Tipo Maq: Liquido<br>Cliente: 2880<br>Lo Fontecilla 441 [Eqy]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ee1b5fc6ae1743648b98ad9c24f9308c = L.marker(
+                [-33.38366131897251, -70.53064803558196],
+                {}
+            ).addTo(marker_cluster_ae6f0a4c571640ff929b4e9a0a76d990);
+        
+    
+            var icon_82c33d44d3d64b73ab185d3765f37d3e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ee1b5fc6ae1743648b98ad9c24f9308c.setIcon(icon_82c33d44d3d64b73ab185d3765f37d3e);
+        
+    
+            marker_ee1b5fc6ae1743648b98ad9c24f9308c.bindTooltip(
+                `<div>
+                     Maquina: MIH1031-6 Tipo Maq: Snack Lata<br>Cliente: 2880<br>Lo Fontecilla 441 [Eqy]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_91b77efb8cf0482a901339422a1429fc = L.marker(
+                [-33.38372626901342, -70.53063998895492],
+                {}
+            ).addTo(marker_cluster_ae6f0a4c571640ff929b4e9a0a76d990);
+        
+    
+            var icon_5f0c154fa80843cf8f6260cc19d974dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_91b77efb8cf0482a901339422a1429fc.setIcon(icon_5f0c154fa80843cf8f6260cc19d974dd);
+        
+    
+            marker_91b77efb8cf0482a901339422a1429fc.bindTooltip(
+                `<div>
+                     Maquina: MIR1010-1 Tipo Maq: Snack Lata<br>Cliente: 2880<br>Lo Fontecilla 441 [Eqy]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cb8f853c56c94566b2857f2815016d05 = L.marker(
+                [-33.38360980683661, -70.53065339999999],
+                {}
+            ).addTo(marker_cluster_ae6f0a4c571640ff929b4e9a0a76d990);
+        
+    
+            var icon_017b29101abe4ea9a1698295d56b0c21 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cb8f853c56c94566b2857f2815016d05.setIcon(icon_017b29101abe4ea9a1698295d56b0c21);
+        
+    
+            marker_cb8f853c56c94566b2857f2815016d05.bindTooltip(
+                `<div>
+                     Maquina: MIH1010-3 Tipo Maq: Snack Lata<br>Cliente: 2880<br>Lo Fontecilla 441 [Eqy]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a512b4cd7e794ed5bc9649bf34edbcc3 = L.marker(
+                [-33.38365907931507, -70.53065339999999],
+                {}
+            ).addTo(marker_cluster_ae6f0a4c571640ff929b4e9a0a76d990);
+        
+    
+            var icon_751d031de6b04ddc8324bace5d971410 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a512b4cd7e794ed5bc9649bf34edbcc3.setIcon(icon_751d031de6b04ddc8324bace5d971410);
+        
+    
+            marker_a512b4cd7e794ed5bc9649bf34edbcc3.bindTooltip(
+                `<div>
+                     Maquina: MIH1135-0 Tipo Maq: Snack Lata<br>Cliente: 2880<br>Lo Fontecilla 441 [Eqy]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eb8f9fbf00d9436f8872a9ab58b7c6fa = L.marker(
+                [-33.38360980683661, -70.53065339999999],
+                {}
+            ).addTo(marker_cluster_ae6f0a4c571640ff929b4e9a0a76d990);
+        
+    
+            var icon_babcfb0bfd3c4063be641375339a5bea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_eb8f9fbf00d9436f8872a9ab58b7c6fa.setIcon(icon_babcfb0bfd3c4063be641375339a5bea);
+        
+    
+            marker_eb8f9fbf00d9436f8872a9ab58b7c6fa.bindTooltip(
+                `<div>
+                     Maquina: MIH1004-9 Tipo Maq: Snack Lata<br>Cliente: 2880<br>Lo Fontecilla 441 [Eqy]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5c0f8865cf3c40cfb86df993145b7853 = L.marker(
+                [-33.3846, -70.5313],
+                {}
+            ).addTo(marker_cluster_ae6f0a4c571640ff929b4e9a0a76d990);
+        
+    
+            var icon_e90280331ad147429bd079e4baa187c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5c0f8865cf3c40cfb86df993145b7853.setIcon(icon_e90280331ad147429bd079e4baa187c3);
+        
+    
+            marker_5c0f8865cf3c40cfb86df993145b7853.bindTooltip(
+                `<div>
+                     Maquina: MIH1058-3 Tipo Maq: Snack Lata<br>Cliente: 2880<br>Lo Fontecilla 441 [Eqy]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f7a84fe2f7b146859a72d9f6acee9c7c = L.marker(
+                [-33.383663558629905, -70.53065339999999],
+                {}
+            ).addTo(marker_cluster_ae6f0a4c571640ff929b4e9a0a76d990);
+        
+    
+            var icon_d7b7f9e054a040cfb2e52cb2837bfd27 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f7a84fe2f7b146859a72d9f6acee9c7c.setIcon(icon_d7b7f9e054a040cfb2e52cb2837bfd27);
+        
+    
+            marker_f7a84fe2f7b146859a72d9f6acee9c7c.bindTooltip(
+                `<div>
+                     Maquina: MIH1018-4 Tipo Maq: Snack Lata<br>Cliente: 2880<br>Lo Fontecilla 441 [Eqy]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_119838e6dda745c3a7d659fd7534de2d = L.marker(
+                [-33.385258180048375, -70.5313936896881],
+                {}
+            ).addTo(marker_cluster_ae6f0a4c571640ff929b4e9a0a76d990);
+        
+    
+            var icon_0d5493f185744657ac4a89aa88453250 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_119838e6dda745c3a7d659fd7534de2d.setIcon(icon_0d5493f185744657ac4a89aa88453250);
+        
+    
+            marker_119838e6dda745c3a7d659fd7534de2d.bindTooltip(
+                `<div>
+                     Maquina: MIH1002-2 Tipo Maq: Snack Lata<br>Cliente: 2880<br>Lo Fontecilla 441 [Eqy]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ac97865a88fe4f24ae9b587e923e40cd = L.marker(
+                [-33.38418763687309, -70.52894215064849],
+                {}
+            ).addTo(marker_cluster_ae6f0a4c571640ff929b4e9a0a76d990);
+        
+    
+            var icon_2f1367d3b7c7427fa2e844aac61484b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ac97865a88fe4f24ae9b587e923e40cd.setIcon(icon_2f1367d3b7c7427fa2e844aac61484b8);
+        
+    
+            marker_ac97865a88fe4f24ae9b587e923e40cd.bindTooltip(
+                `<div>
+                     Maquina: MIH1137-7 Tipo Maq: Snack Lata<br>Cliente: 2880<br>Lo Fontecilla 441 [Eqy]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e91246144c2c4ba89f8b0a3e794a4b0c = L.marker(
+                [-33.3848, -70.5302],
+                {}
+            ).addTo(marker_cluster_ae6f0a4c571640ff929b4e9a0a76d990);
+        
+    
+            var icon_7ce207ac711f4a168d91e658091ba068 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e91246144c2c4ba89f8b0a3e794a4b0c.setIcon(icon_7ce207ac711f4a168d91e658091ba068);
+        
+    
+            marker_e91246144c2c4ba89f8b0a3e794a4b0c.bindTooltip(
+                `<div>
+                     Maquina: MIH1041-3 Tipo Maq: Snack Lata<br>Cliente: 2880<br>Lo Fontecilla 441 [Eqy]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9f14f471271b4aba91d39a5d9695fd4d = L.marker(
+                [-33.3839412756992, -70.53052465396729],
+                {}
+            ).addTo(marker_cluster_ae6f0a4c571640ff929b4e9a0a76d990);
+        
+    
+            var icon_9c34af1973fc436d9de7bc83b06bf4f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9f14f471271b4aba91d39a5d9695fd4d.setIcon(icon_9c34af1973fc436d9de7bc83b06bf4f7);
+        
+    
+            marker_9f14f471271b4aba91d39a5d9695fd4d.bindTooltip(
+                `<div>
+                     Maquina: MIH1009-5 Tipo Maq: Snack Lata<br>Cliente: 2880<br>Lo Fontecilla 441 [Eqy]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_28c7ad4aba2948f2896230c4a62b30ed = L.marker(
+                [-33.3839412756992, -70.53052465396729],
+                {}
+            ).addTo(marker_cluster_ae6f0a4c571640ff929b4e9a0a76d990);
+        
+    
+            var icon_e7c2ee72118e428292a354ac6c9ee851 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_28c7ad4aba2948f2896230c4a62b30ed.setIcon(icon_e7c2ee72118e428292a354ac6c9ee851);
+        
+    
+            marker_28c7ad4aba2948f2896230c4a62b30ed.bindTooltip(
+                `<div>
+                     Maquina: MIH1048-6 Tipo Maq: Snack Lata<br>Cliente: 2880<br>Lo Fontecilla 441 [Eqy]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4197200ce75b494fbc2e015eb63b976a = L.marker(
+                [-33.38439480368353, -70.53089982795325],
+                {}
+            ).addTo(marker_cluster_ae6f0a4c571640ff929b4e9a0a76d990);
+        
+    
+            var icon_e0b4c8c9e26441ca9b24b299665d3a43 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4197200ce75b494fbc2e015eb63b976a.setIcon(icon_e0b4c8c9e26441ca9b24b299665d3a43);
+        
+    
+            marker_4197200ce75b494fbc2e015eb63b976a.bindTooltip(
+                `<div>
+                     Maquina: MIH1049-4 Tipo Maq: Snack Lata<br>Cliente: 2880<br>Lo Fontecilla 441 [Eqy]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_914a32ec2c2f4bc58657c8da6c61d9ce = L.marker(
+                [-33.383762103497986, -70.53005258518066],
+                {}
+            ).addTo(marker_cluster_ae6f0a4c571640ff929b4e9a0a76d990);
+        
+    
+            var icon_e4630b96bd1e432db6b2bd9bb2ec1dcc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_914a32ec2c2f4bc58657c8da6c61d9ce.setIcon(icon_e4630b96bd1e432db6b2bd9bb2ec1dcc);
+        
+    
+            marker_914a32ec2c2f4bc58657c8da6c61d9ce.bindTooltip(
+                `<div>
+                     Maquina: MIH1108-3 Tipo Maq: Snack Lata<br>Cliente: 2880<br>Lo Fontecilla 441 [Eqy]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f5cd71283e5a44c799adebcac4395ddc = L.marker(
+                [-33.3855, -70.5312],
+                {}
+            ).addTo(marker_cluster_ae6f0a4c571640ff929b4e9a0a76d990);
+        
+    
+            var icon_d2d7ed4db7fb4457bbbf96b6d1874bac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f5cd71283e5a44c799adebcac4395ddc.setIcon(icon_d2d7ed4db7fb4457bbbf96b6d1874bac);
+        
+    
+            marker_f5cd71283e5a44c799adebcac4395ddc.bindTooltip(
+                `<div>
+                     Maquina: MIH1079-6 Tipo Maq: Snack Lata<br>Cliente: 2880<br>Lo Fontecilla 441 [Eqy]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4fc1515968bc4884a3e40560ca39dc9d = L.marker(
+                [-33.385395916340826, -70.53127567249145],
+                {}
+            ).addTo(marker_cluster_ae6f0a4c571640ff929b4e9a0a76d990);
+        
+    
+            var icon_25aa307e3dde437d81c3b792084e2919 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4fc1515968bc4884a3e40560ca39dc9d.setIcon(icon_25aa307e3dde437d81c3b792084e2919);
+        
+    
+            marker_4fc1515968bc4884a3e40560ca39dc9d.bindTooltip(
+                `<div>
+                     Maquina: MIH1069-9 Tipo Maq: Snack Lata<br>Cliente: 2880<br>Lo Fontecilla 441 [Eqy]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c334757e48b84436a49cde35aab01a6a = L.marker(
+                [-33.38543063033133, -70.53106109577027],
+                {}
+            ).addTo(marker_cluster_ae6f0a4c571640ff929b4e9a0a76d990);
+        
+    
+            var icon_5314499bb23644c99510b86ce3c8a421 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c334757e48b84436a49cde35aab01a6a.setIcon(icon_5314499bb23644c99510b86ce3c8a421);
+        
+    
+            marker_c334757e48b84436a49cde35aab01a6a.bindTooltip(
+                `<div>
+                     Maquina: MIH1022-7 Tipo Maq: Snack Lata<br>Cliente: 2880<br>Lo Fontecilla 441 [Eqy]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6a22582e72c34b95b81e965b81486e7b = L.marker(
+                [-33.3836546, -70.53065339999999],
+                {}
+            ).addTo(marker_cluster_ae6f0a4c571640ff929b4e9a0a76d990);
+        
+    
+            var icon_46e85c1b7f46455cbb524ffcaa902766 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6a22582e72c34b95b81e965b81486e7b.setIcon(icon_46e85c1b7f46455cbb524ffcaa902766);
+        
+    
+            marker_6a22582e72c34b95b81e965b81486e7b.bindTooltip(
+                `<div>
+                     Maquina: MIH1046-k Tipo Maq: Snack Lata<br>Cliente: 2880<br>Lo Fontecilla 441 [Eqy]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_96891607956648148cc0545aab7eb329 = L.marker(
+                [-33.383683715543825, -70.52929620223846],
+                {}
+            ).addTo(marker_cluster_ae6f0a4c571640ff929b4e9a0a76d990);
+        
+    
+            var icon_80ce35ecdc9e41699aea478c92477b16 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_96891607956648148cc0545aab7eb329.setIcon(icon_80ce35ecdc9e41699aea478c92477b16);
+        
+    
+            marker_96891607956648148cc0545aab7eb329.bindTooltip(
+                `<div>
+                     Maquina: MIH1103-7 Tipo Maq: Snack Lata<br>Cliente: 2880<br>Lo Fontecilla 441 [Eqy]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

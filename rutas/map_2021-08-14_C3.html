@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d13b1f5401814760a7e3572f2915c413 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_d13b1f5401814760a7e3572f2915c413" ></div>
+        
+</body>
+<script>    
+    
+            var map_d13b1f5401814760a7e3572f2915c413 = L.map(
+                "map_d13b1f5401814760a7e3572f2915c413",
+                {
+                    center: [-36.740603165131354, -73.1097076723989],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_d13b1f5401814760a7e3572f2915c413);
+
+            
+
+        
+    
+            var tile_layer_fdd71544c1854c67848b10fdf3d3862b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d13b1f5401814760a7e3572f2915c413);
+        
+    
+
+        function geo_json_70b8b619d1cd492999943a985bd049e8_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_70b8b619d1cd492999943a985bd049e8 = L.geoJson(null, {
+                onEachFeature: geo_json_70b8b619d1cd492999943a985bd049e8_onEachFeature,
+            
+        });
+
+        function geo_json_70b8b619d1cd492999943a985bd049e8_add (data) {
+            geo_json_70b8b619d1cd492999943a985bd049e8
+                .addData(data)
+                .addTo(map_d13b1f5401814760a7e3572f2915c413);
+        }
+            geo_json_70b8b619d1cd492999943a985bd049e8_add({"coordinates": [[-73.108381, -36.741118], [-73.108074, -36.741529], [-73.107595, -36.74139], [-73.10855, -36.740001], [-73.109901, -36.737752], [-73.110099, -36.737579], [-73.110873, -36.736367], [-73.111191, -36.73618], [-73.111455, -36.73609], [-73.111587, -36.736047], [-73.111935, -36.736059], [-73.112249, -36.73615], [-73.112467, -36.736261], [-73.11301, -36.736722], [-73.114562, -36.737739]], "type": "LineString"});
+
+        
+    
+            map_d13b1f5401814760a7e3572f2915c413.fitBounds(
+                [[-36.74132079160554, -73.113592], [-36.7387023, -73.10847590422975]],
+                {}
+            );
+        
+    
+            var marker_cluster_99af69fa0a6448da8db2d6aa3c3fa364 = L.markerClusterGroup(
+                {}
+            );
+            map_d13b1f5401814760a7e3572f2915c413.addLayer(marker_cluster_99af69fa0a6448da8db2d6aa3c3fa364);
+        
+    
+            var marker_1d7ce20c59234e3aa8196949d3798069 = L.marker(
+                [-36.7402009599596, -73.1091518209015],
+                {}
+            ).addTo(marker_cluster_99af69fa0a6448da8db2d6aa3c3fa364);
+        
+    
+            var icon_3ab2710f1c5045c3acd143dbb0a89056 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1d7ce20c59234e3aa8196949d3798069.setIcon(icon_3ab2710f1c5045c3acd143dbb0a89056);
+        
+    
+            marker_1d7ce20c59234e3aa8196949d3798069.bindTooltip(
+                `<div>
+                     Maquina: MIH1102-9 Tipo Maq: Snack Lata<br>Cliente: 14298<br>Alto Horno 777 [Oor]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5a29042adfe34cefaa9293f924c30051 = L.marker(
+                [-36.74132079160554, -73.10927520251619],
+                {}
+            ).addTo(marker_cluster_99af69fa0a6448da8db2d6aa3c3fa364);
+        
+    
+            var icon_3efacbbad8b14c58ac039948402b5c08 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5a29042adfe34cefaa9293f924c30051.setIcon(icon_3efacbbad8b14c58ac039948402b5c08);
+        
+    
+            marker_5a29042adfe34cefaa9293f924c30051.bindTooltip(
+                `<div>
+                     Maquina: 2110152A5 Tipo Maq: Snack Lata<br>Cliente: 14298<br>Alto Horno 777 [Oor]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fdbcc61a63964972836b0a38268d5924 = L.marker(
+                [-36.74132079160554, -73.10927520251619],
+                {}
+            ).addTo(marker_cluster_99af69fa0a6448da8db2d6aa3c3fa364);
+        
+    
+            var icon_cbc68ed31d594eadadd2f8766c2fa07f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fdbcc61a63964972836b0a38268d5924.setIcon(icon_cbc68ed31d594eadadd2f8766c2fa07f);
+        
+    
+            marker_fdbcc61a63964972836b0a38268d5924.bindTooltip(
+                `<div>
+                     Maquina: CTO1083-6 Tipo Maq: Liquido<br>Cliente: 14298<br>Alto Horno 777 [Oor]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_77493a035c994ae280a4638b33e8553e = L.marker(
+                [-36.74103707380871, -73.10847590422975],
+                {}
+            ).addTo(marker_cluster_99af69fa0a6448da8db2d6aa3c3fa364);
+        
+    
+            var icon_02eece4b9ca94fc7bda691c15c368ec6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_77493a035c994ae280a4638b33e8553e.setIcon(icon_02eece4b9ca94fc7bda691c15c368ec6);
+        
+    
+            marker_77493a035c994ae280a4638b33e8553e.bindTooltip(
+                `<div>
+                     Maquina: CTO1066-6 Tipo Maq: Liquido<br>Cliente: 14298<br>Alto Horno 777 [Oor]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5442adc9ca0b4187ab079003c8a77980 = L.marker(
+                [-36.74103707380871, -73.10847590422975],
+                {}
+            ).addTo(marker_cluster_99af69fa0a6448da8db2d6aa3c3fa364);
+        
+    
+            var icon_1d1e5a9f28c541bfac2fb3bd8ef50b63 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5442adc9ca0b4187ab079003c8a77980.setIcon(icon_1d1e5a9f28c541bfac2fb3bd8ef50b63);
+        
+    
+            marker_5442adc9ca0b4187ab079003c8a77980.bindTooltip(
+                `<div>
+                     Maquina: MIH1124-k Tipo Maq: Snack Lata<br>Cliente: 14298<br>Alto Horno 777 [Oor]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f1ae6f68b26d48d8a9726bf2246a8b06 = L.marker(
+                [-36.7387023, -73.113592],
+                {}
+            ).addTo(marker_cluster_99af69fa0a6448da8db2d6aa3c3fa364);
+        
+    
+            var icon_2d229228656e47cfbeffc09331260f5d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f1ae6f68b26d48d8a9726bf2246a8b06.setIcon(icon_2d229228656e47cfbeffc09331260f5d);
+        
+    
+            marker_f1ae6f68b26d48d8a9726bf2246a8b06.bindTooltip(
+                `<div>
+                     Maquina: SLM2886-k Tipo Maq: Liquido<br>Cliente: 14283<br>Gran Bretaña 955 [Oqn]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

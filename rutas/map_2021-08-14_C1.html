@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1ebd778d3f9f450ebe1195cc10f306d0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_1ebd778d3f9f450ebe1195cc10f306d0" ></div>
+        
+</body>
+<script>    
+    
+            var map_1ebd778d3f9f450ebe1195cc10f306d0 = L.map(
+                "map_1ebd778d3f9f450ebe1195cc10f306d0",
+                {
+                    center: [-36.86672961154887, -73.13757372737403],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_1ebd778d3f9f450ebe1195cc10f306d0);
+
+            
+
+        
+    
+            var tile_layer_632a9409940d4bcc97712968b88cfdbb = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1ebd778d3f9f450ebe1195cc10f306d0);
+        
+    
+            map_1ebd778d3f9f450ebe1195cc10f306d0.fitBounds(
+                [[-36.86708566884667, -73.13817493649293], [-36.86635607765779, -73.13649966086939]],
+                {}
+            );
+        
+    
+            var marker_cluster_9b947f069c9a4d86a6c971b1617c41a7 = L.markerClusterGroup(
+                {}
+            );
+            map_1ebd778d3f9f450ebe1195cc10f306d0.addLayer(marker_cluster_9b947f069c9a4d86a6c971b1617c41a7);
+        
+    
+            var marker_35680fabb33d4ca08ed935bee5bb09ca = L.marker(
+                [-36.86635607765779, -73.13814274998475],
+                {}
+            ).addTo(marker_cluster_9b947f069c9a4d86a6c971b1617c41a7);
+        
+    
+            var icon_9f8bda262b0b44cb89636c4b9897a53b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_35680fabb33d4ca08ed935bee5bb09ca.setIcon(icon_9f8bda262b0b44cb89636c4b9897a53b);
+        
+    
+            marker_35680fabb33d4ca08ed935bee5bb09ca.bindTooltip(
+                `<div>
+                     Maquina: 1232210169 Tipo Maq: Snack<br>Cliente: 15031<br>Calle Portal San Pedro 4850<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0dacb6cddc1d496cb5f268b585ddaab4 = L.marker(
+                [-36.86647624609756, -73.13817493649293],
+                {}
+            ).addTo(marker_cluster_9b947f069c9a4d86a6c971b1617c41a7);
+        
+    
+            var icon_3a84c410ac304caaa5fe72435451bed8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0dacb6cddc1d496cb5f268b585ddaab4.setIcon(icon_3a84c410ac304caaa5fe72435451bed8);
+        
+    
+            marker_0dacb6cddc1d496cb5f268b585ddaab4.bindTooltip(
+                `<div>
+                     Maquina: CTO1059-9 Tipo Maq: Liquido<br>Cliente: 15031<br>Calle Portal San Pedro 4850<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3bae024d790c4816b52fcc93f1975aab = L.marker(
+                [-36.86708566884667, -73.13747756214906],
+                {}
+            ).addTo(marker_cluster_9b947f069c9a4d86a6c971b1617c41a7);
+        
+    
+            var icon_dcea49da8bb441149bb4b1953de0c467 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3bae024d790c4816b52fcc93f1975aab.setIcon(icon_dcea49da8bb441149bb4b1953de0c467);
+        
+    
+            marker_3bae024d790c4816b52fcc93f1975aab.bindTooltip(
+                `<div>
+                     Maquina: 2050152A5 Tipo Maq: Snack Lata<br>Cliente: 15031<br>Calle Portal San Pedro 4850<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cfae4a7f454040eeb67d2ea5a4b11908 = L.marker(
+                [-36.86700045359345, -73.13649966086939],
+                {}
+            ).addTo(marker_cluster_9b947f069c9a4d86a6c971b1617c41a7);
+        
+    
+            var icon_4d6c646b3bf240568306c58ff7445ce7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cfae4a7f454040eeb67d2ea5a4b11908.setIcon(icon_4d6c646b3bf240568306c58ff7445ce7);
+        
+    
+            marker_cfae4a7f454040eeb67d2ea5a4b11908.bindTooltip(
+                `<div>
+                     Maquina: 1173082 Tipo Maq: Snack<br>Cliente: 15031<br>Calle Portal San Pedro 4850<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6b08ca3a6c6c4a22a79f7b98a351ae90 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_6b08ca3a6c6c4a22a79f7b98a351ae90" ></div>
+        
+</body>
+<script>    
+    
+            var map_6b08ca3a6c6c4a22a79f7b98a351ae90 = L.map(
+                "map_6b08ca3a6c6c4a22a79f7b98a351ae90",
+                {
+                    center: [-33.413874760238414, -70.60604984081081],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_6b08ca3a6c6c4a22a79f7b98a351ae90);
+
+            
+
+        
+    
+            var tile_layer_daf077a0e3aa45acba50744312f3fb39 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6b08ca3a6c6c4a22a79f7b98a351ae90);
+        
+    
+            map_6b08ca3a6c6c4a22a79f7b98a351ae90.fitBounds(
+                [[-33.41607630119208, -70.6074], [-33.412695, -70.60506242091884]],
+                {}
+            );
+        
+    
+            var marker_cluster_0f1e800d9b9d474dbe558381ae2ab8f5 = L.markerClusterGroup(
+                {}
+            );
+            map_6b08ca3a6c6c4a22a79f7b98a351ae90.addLayer(marker_cluster_0f1e800d9b9d474dbe558381ae2ab8f5);
+        
+    
+            var marker_3a5ae693ee1b423e9518d26cede4c49e = L.marker(
+                [-33.412695, -70.60597356627045],
+                {}
+            ).addTo(marker_cluster_0f1e800d9b9d474dbe558381ae2ab8f5);
+        
+    
+            var icon_f008c3abd623467fbb61eb16c9d6d432 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3a5ae693ee1b423e9518d26cede4c49e.setIcon(icon_f008c3abd623467fbb61eb16c9d6d432);
+        
+    
+            marker_3a5ae693ee1b423e9518d26cede4c49e.bindTooltip(
+                `<div>
+                     Maquina: 32410668 Tipo Maq: Liquido<br>Cliente: 5041<br>Costanera Sur Río Mapocho 2760<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_093373e2ad944e089b909d5f6d396aea = L.marker(
+                [-33.4158, -70.6074],
+                {}
+            ).addTo(marker_cluster_0f1e800d9b9d474dbe558381ae2ab8f5);
+        
+    
+            var icon_91b65552fd464c67b00ae0d70d77dac9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_093373e2ad944e089b909d5f6d396aea.setIcon(icon_91b65552fd464c67b00ae0d70d77dac9);
+        
+    
+            marker_093373e2ad944e089b909d5f6d396aea.bindTooltip(
+                `<div>
+                     Maquina: 213038105 Tipo Maq: Snack Lata<br>Cliente: 5041<br>Costanera Sur Río Mapocho 2760<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_df85d2a217a94f57bb1e9e47e5c85599 = L.marker(
+                [-33.4133, -70.6063],
+                {}
+            ).addTo(marker_cluster_0f1e800d9b9d474dbe558381ae2ab8f5);
+        
+    
+            var icon_2199f6978620441ba405ab946725b4ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_df85d2a217a94f57bb1e9e47e5c85599.setIcon(icon_2199f6978620441ba405ab946725b4ab);
+        
+    
+            marker_df85d2a217a94f57bb1e9e47e5c85599.bindTooltip(
+                `<div>
+                     Maquina: 33811577 Tipo Maq: Snack Lata<br>Cliente: 5041<br>Costanera Sur Río Mapocho 2760<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e00cbe93a7ae45f9964b6480a5a96dca = L.marker(
+                [-33.413, -70.6066],
+                {}
+            ).addTo(marker_cluster_0f1e800d9b9d474dbe558381ae2ab8f5);
+        
+    
+            var icon_e1d581a1e92f47548422b29bb4a1b027 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e00cbe93a7ae45f9964b6480a5a96dca.setIcon(icon_e1d581a1e92f47548422b29bb4a1b027);
+        
+    
+            marker_e00cbe93a7ae45f9964b6480a5a96dca.bindTooltip(
+                `<div>
+                     Maquina: 32310540 Tipo Maq: Liquido<br>Cliente: 5041<br>Costanera Sur Río Mapocho 2760<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dda680487c3d420bb1e2e7f7c8874487 = L.marker(
+                [-33.41607630119208, -70.60506242091884],
+                {}
+            ).addTo(marker_cluster_0f1e800d9b9d474dbe558381ae2ab8f5);
+        
+    
+            var icon_5ad0825e83bd4be483bce9a9f6735e88 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dda680487c3d420bb1e2e7f7c8874487.setIcon(icon_5ad0825e83bd4be483bce9a9f6735e88);
+        
+    
+            marker_dda680487c3d420bb1e2e7f7c8874487.bindTooltip(
+                `<div>
+                     Maquina: 213038102 Tipo Maq: Snack Lata<br>Cliente: 5041<br>Costanera Sur Río Mapocho 2760<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0cca9d57db114e9faff8e947fe61ef7e = L.marker(
+                [-33.41607630119208, -70.60506242091884],
+                {}
+            ).addTo(marker_cluster_0f1e800d9b9d474dbe558381ae2ab8f5);
+        
+    
+            var icon_75cdc130736e4344bf6638099266e43b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0cca9d57db114e9faff8e947fe61ef7e.setIcon(icon_75cdc130736e4344bf6638099266e43b);
+        
+    
+            marker_0cca9d57db114e9faff8e947fe61ef7e.bindTooltip(
+                `<div>
+                     Maquina: 32410667 Tipo Maq: Liquido<br>Cliente: 5041<br>Costanera Sur Río Mapocho 2760<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_03d8c677e77d431d8236df732716abd0 = L.marker(
+                [-33.4127, -70.6059],
+                {}
+            ).addTo(marker_cluster_0f1e800d9b9d474dbe558381ae2ab8f5);
+        
+    
+            var icon_aef3c6f7647040c59e4abd9367aace0c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_03d8c677e77d431d8236df732716abd0.setIcon(icon_aef3c6f7647040c59e4abd9367aace0c);
+        
+    
+            marker_03d8c677e77d431d8236df732716abd0.bindTooltip(
+                `<div>
+                     Maquina: DLC1557-K Tipo Maq: Latas<br>Cliente: 5041<br>Costanera Sur Río Mapocho 2760<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b6fc2e5e687c44da88e670095c94bc1e = L.marker(
+                [-33.4128, -70.6059],
+                {}
+            ).addTo(marker_cluster_0f1e800d9b9d474dbe558381ae2ab8f5);
+        
+    
+            var icon_5b8b3bd473e942efa15df2d74c9e94da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b6fc2e5e687c44da88e670095c94bc1e.setIcon(icon_5b8b3bd473e942efa15df2d74c9e94da);
+        
+    
+            marker_b6fc2e5e687c44da88e670095c94bc1e.bindTooltip(
+                `<div>
+                     Maquina: 30712107 Tipo Maq: Snack Lata<br>Cliente: 5041<br>Costanera Sur Río Mapocho 2760<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f8d8652850ab4e4bbfe1e401022c4979 = L.marker(
+                [-33.4136, -70.6063],
+                {}
+            ).addTo(marker_cluster_0f1e800d9b9d474dbe558381ae2ab8f5);
+        
+    
+            var icon_4ea2f7681d774954b580d10d2d24babe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f8d8652850ab4e4bbfe1e401022c4979.setIcon(icon_4ea2f7681d774954b580d10d2d24babe);
+        
+    
+            marker_f8d8652850ab4e4bbfe1e401022c4979.bindTooltip(
+                `<div>
+                     Maquina: CTO1017-8 Tipo Maq: Liquido<br>Cliente: 5041<br>Costanera Sur Río Mapocho 2760<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_75d0d99a415b4b5e8669f1792ec1c1f5 = L.marker(
+                [-33.4127, -70.606],
+                {}
+            ).addTo(marker_cluster_0f1e800d9b9d474dbe558381ae2ab8f5);
+        
+    
+            var icon_6e0a5f947d12440aa4d60975dfc6cba8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_75d0d99a415b4b5e8669f1792ec1c1f5.setIcon(icon_6e0a5f947d12440aa4d60975dfc6cba8);
+        
+    
+            marker_75d0d99a415b4b5e8669f1792ec1c1f5.bindTooltip(
+                `<div>
+                     Maquina: PSL1038-3 Tipo Maq: Snack Lata<br>Cliente: 5041<br>Costanera Sur Río Mapocho 2760<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ad60a35f0c9c432181aec04fa60fa12d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_ad60a35f0c9c432181aec04fa60fa12d" ></div>
+        
+</body>
+<script>    
+    
+            var map_ad60a35f0c9c432181aec04fa60fa12d = L.map(
+                "map_ad60a35f0c9c432181aec04fa60fa12d",
+                {
+                    center: [-36.65855018947692, -72.47255307252976],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_ad60a35f0c9c432181aec04fa60fa12d);
+
+            
+
+        
+    
+            var tile_layer_5b942de4a3f54f96b9d5f3bca5314374 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ad60a35f0c9c432181aec04fa60fa12d);
+        
+    
+            map_ad60a35f0c9c432181aec04fa60fa12d.fitBounds(
+                [[-36.66051469497543, -72.47479906679831], [-36.65222352852907, -72.47137204911805]],
+                {}
+            );
+        
+    
+            var marker_cluster_56a1e74b65be41b29aa3d074dd7efe45 = L.markerClusterGroup(
+                {}
+            );
+            map_ad60a35f0c9c432181aec04fa60fa12d.addLayer(marker_cluster_56a1e74b65be41b29aa3d074dd7efe45);
+        
+    
+            var marker_38c951688eda437f949938058cb8ef88 = L.marker(
+                [-36.656704446175446, -72.47479904373762],
+                {}
+            ).addTo(marker_cluster_56a1e74b65be41b29aa3d074dd7efe45);
+        
+    
+            var icon_f83b43e1c6014a12a8dcc2526c2e9604 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_38c951688eda437f949938058cb8ef88.setIcon(icon_f83b43e1c6014a12a8dcc2526c2e9604);
+        
+    
+            marker_38c951688eda437f949938058cb8ef88.bindTooltip(
+                `<div>
+                     Maquina: SLM2222-7 Tipo Maq: Liquido<br>Cliente: 14264<br>Autopista Itata Kilometro 21 [Kkp]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0df0d2d1812b4ebeb3905291fe2dd3da = L.marker(
+                [-36.65977798056677, -72.47186518124238],
+                {}
+            ).addTo(marker_cluster_56a1e74b65be41b29aa3d074dd7efe45);
+        
+    
+            var icon_022b554684054c47ac4acabda9d31220 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0df0d2d1812b4ebeb3905291fe2dd3da.setIcon(icon_022b554684054c47ac4acabda9d31220);
+        
+    
+            marker_0df0d2d1812b4ebeb3905291fe2dd3da.bindTooltip(
+                `<div>
+                     Maquina: DLC1117-5 Tipo Maq: Latas<br>Cliente: 14264<br>Autopista Itata Kilometro 21 [Kkp]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2a96d22667b64825a16e87f837cd668a = L.marker(
+                [-36.65977798056677, -72.47186518124238],
+                {}
+            ).addTo(marker_cluster_56a1e74b65be41b29aa3d074dd7efe45);
+        
+    
+            var icon_40e127025b584b0fbc6d1570d123f974 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2a96d22667b64825a16e87f837cd668a.setIcon(icon_40e127025b584b0fbc6d1570d123f974);
+        
+    
+            marker_2a96d22667b64825a16e87f837cd668a.bindTooltip(
+                `<div>
+                     Maquina: DLS1278-1 Tipo Maq: Snack<br>Cliente: 14264<br>Autopista Itata Kilometro 21 [Kkp]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bb6d1bdd770b4648b172a26388290fc5 = L.marker(
+                [-36.65977798056677, -72.47186518124238],
+                {}
+            ).addTo(marker_cluster_56a1e74b65be41b29aa3d074dd7efe45);
+        
+    
+            var icon_2f107903a2364078a70e2e5a3e91cc5e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bb6d1bdd770b4648b172a26388290fc5.setIcon(icon_2f107903a2364078a70e2e5a3e91cc5e);
+        
+    
+            marker_bb6d1bdd770b4648b172a26388290fc5.bindTooltip(
+                `<div>
+                     Maquina: SLM2173-5 Tipo Maq: Liquido<br>Cliente: 14264<br>Autopista Itata Kilometro 21 [Kkp]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_40a8dec0f095401889789f8974363889 = L.marker(
+                [-36.65981245221753, -72.4719294384285],
+                {}
+            ).addTo(marker_cluster_56a1e74b65be41b29aa3d074dd7efe45);
+        
+    
+            var icon_8bb263eeffdd4ad89831d094a68dad9f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_40a8dec0f095401889789f8974363889.setIcon(icon_8bb263eeffdd4ad89831d094a68dad9f);
+        
+    
+            marker_40a8dec0f095401889789f8974363889.bindTooltip(
+                `<div>
+                     Maquina: DLS1273-0 Tipo Maq: Snack<br>Cliente: 14264<br>Autopista Itata Kilometro 21 [Kkp]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_12cee6c3c8254b4a9203b27788b869a1 = L.marker(
+                [-36.65981245221753, -72.4719294384285],
+                {}
+            ).addTo(marker_cluster_56a1e74b65be41b29aa3d074dd7efe45);
+        
+    
+            var icon_18844d50948d4561810e9f7a10437a54 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_12cee6c3c8254b4a9203b27788b869a1.setIcon(icon_18844d50948d4561810e9f7a10437a54);
+        
+    
+            marker_12cee6c3c8254b4a9203b27788b869a1.bindTooltip(
+                `<div>
+                     Maquina: SLM1397-K Tipo Maq: Liquido<br>Cliente: 14264<br>Autopista Itata Kilometro 21 [Kkp]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c47c474b66cf416b85a5a58cad3f025b = L.marker(
+                [-36.66051469497543, -72.47479906679831],
+                {}
+            ).addTo(marker_cluster_56a1e74b65be41b29aa3d074dd7efe45);
+        
+    
+            var icon_3efe7110bfe045f8867522edc4e7e1bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c47c474b66cf416b85a5a58cad3f025b.setIcon(icon_3efe7110bfe045f8867522edc4e7e1bf);
+        
+    
+            marker_c47c474b66cf416b85a5a58cad3f025b.bindTooltip(
+                `<div>
+                     Maquina: SLM2186-7 Tipo Maq: Liquido<br>Cliente: 14264<br>Autopista Itata Kilometro 21 [Kkp]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_626e35e73f8f4932bfecc8d7d3497c3b = L.marker(
+                [-36.65222352852907, -72.47137204911805],
+                {}
+            ).addTo(marker_cluster_56a1e74b65be41b29aa3d074dd7efe45);
+        
+    
+            var icon_4225330e53224a3cb0c8dd67ef4bc9d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_626e35e73f8f4932bfecc8d7d3497c3b.setIcon(icon_4225330e53224a3cb0c8dd67ef4bc9d5);
+        
+    
+            marker_626e35e73f8f4932bfecc8d7d3497c3b.bindTooltip(
+                `<div>
+                     Maquina: 144019 Tipo Maq: Snack Lata<br>Cliente: 14264<br>Autopista Itata Kilometro 21 [Kkp]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

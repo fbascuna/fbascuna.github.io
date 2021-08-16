@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f2e7a3fe9ee340baaadd387893fc8eb4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f2e7a3fe9ee340baaadd387893fc8eb4" ></div>
+        
+</body>
+<script>    
+    
+            var map_f2e7a3fe9ee340baaadd387893fc8eb4 = L.map(
+                "map_f2e7a3fe9ee340baaadd387893fc8eb4",
+                {
+                    center: [-33.514193729046596, -70.59982584603272],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_f2e7a3fe9ee340baaadd387893fc8eb4);
+
+            
+
+        
+    
+            var tile_layer_e5027d455c994a6e9b56e99d27c4bac5 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f2e7a3fe9ee340baaadd387893fc8eb4);
+        
+    
+            map_f2e7a3fe9ee340baaadd387893fc8eb4.fitBounds(
+                [[-33.5142474, -70.6000404227539], [-33.51410427745761, -70.5996971]],
+                {}
+            );
+        
+    
+            var marker_cluster_23f9b17bdd8e4ed1a397ec36b459ea3c = L.markerClusterGroup(
+                {}
+            );
+            map_f2e7a3fe9ee340baaadd387893fc8eb4.addLayer(marker_cluster_23f9b17bdd8e4ed1a397ec36b459ea3c);
+        
+    
+            var marker_90e8673f1f2c47568dca7c8532acea02 = L.marker(
+                [-33.51410427745761, -70.6000404227539],
+                {}
+            ).addTo(marker_cluster_23f9b17bdd8e4ed1a397ec36b459ea3c);
+        
+    
+            var icon_594508596c8740cfa83e22e32de93193 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_90e8673f1f2c47568dca7c8532acea02.setIcon(icon_594508596c8740cfa83e22e32de93193);
+        
+    
+            marker_90e8673f1f2c47568dca7c8532acea02.bindTooltip(
+                `<div>
+                     Maquina: SLM2724-k Tipo Maq: Liquido<br>Cliente: 16734<br>Av. Froilan Roa N°6542<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5602938102904f8f9d1af5060a3a9da1 = L.marker(
+                [-33.51410427745761, -70.6000404227539],
+                {}
+            ).addTo(marker_cluster_23f9b17bdd8e4ed1a397ec36b459ea3c);
+        
+    
+            var icon_dda3b50a1acb452783b365acc39c6574 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5602938102904f8f9d1af5060a3a9da1.setIcon(icon_dda3b50a1acb452783b365acc39c6574);
+        
+    
+            marker_5602938102904f8f9d1af5060a3a9da1.bindTooltip(
+                `<div>
+                     Maquina: 315001 Tipo Maq: Snack<br>Cliente: 16734<br>Av. Froilan Roa N°6542<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e625177bebd04ca593b19931eef7f038 = L.marker(
+                [-33.51410427745761, -70.6000404227539],
+                {}
+            ).addTo(marker_cluster_23f9b17bdd8e4ed1a397ec36b459ea3c);
+        
+    
+            var icon_f0d3b7720fa74c3d9e3cabf41c995437 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e625177bebd04ca593b19931eef7f038.setIcon(icon_f0d3b7720fa74c3d9e3cabf41c995437);
+        
+    
+            marker_e625177bebd04ca593b19931eef7f038.bindTooltip(
+                `<div>
+                     Maquina: PSD1076-8 Tipo Maq: Latas<br>Cliente: 16734<br>Av. Froilan Roa N°6542<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5ccd4b540aee4d24bc5b22a82b2da99d = L.marker(
+                [-33.5142474, -70.5996971],
+                {}
+            ).addTo(marker_cluster_23f9b17bdd8e4ed1a397ec36b459ea3c);
+        
+    
+            var icon_af6865beb2414b049b8fd1abed7fbf51 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5ccd4b540aee4d24bc5b22a82b2da99d.setIcon(icon_af6865beb2414b049b8fd1abed7fbf51);
+        
+    
+            marker_5ccd4b540aee4d24bc5b22a82b2da99d.bindTooltip(
+                `<div>
+                     Maquina: PSD1060-1 Tipo Maq: Latas<br>Cliente: 16734<br>Av. Froilan Roa N°6542<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3b9b2a45cb5d489ea8479acef0596815 = L.marker(
+                [-33.5142474, -70.5996971],
+                {}
+            ).addTo(marker_cluster_23f9b17bdd8e4ed1a397ec36b459ea3c);
+        
+    
+            var icon_71d12d9c40fd464a83e17a503e305e1f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3b9b2a45cb5d489ea8479acef0596815.setIcon(icon_71d12d9c40fd464a83e17a503e305e1f);
+        
+    
+            marker_3b9b2a45cb5d489ea8479acef0596815.bindTooltip(
+                `<div>
+                     Maquina: 21023084 Tipo Maq: Snack<br>Cliente: 16734<br>Av. Froilan Roa N°6542<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_634366e5e24e496ea978f4c5cad78624 = L.marker(
+                [-33.5142474, -70.5996971],
+                {}
+            ).addTo(marker_cluster_23f9b17bdd8e4ed1a397ec36b459ea3c);
+        
+    
+            var icon_3eb3e817a5224cd8a2624a5f4fb4c527 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_634366e5e24e496ea978f4c5cad78624.setIcon(icon_3eb3e817a5224cd8a2624a5f4fb4c527);
+        
+    
+            marker_634366e5e24e496ea978f4c5cad78624.bindTooltip(
+                `<div>
+                     Maquina: SLM2738-k Tipo Maq: Liquido<br>Cliente: 16734<br>Av. Froilan Roa N°6542<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2265d190b9cd45a597e7c3a2cca3b32f = L.marker(
+                [-33.5142474, -70.5996971],
+                {}
+            ).addTo(marker_cluster_23f9b17bdd8e4ed1a397ec36b459ea3c);
+        
+    
+            var icon_8c124818a3ae49c085144eb053454527 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2265d190b9cd45a597e7c3a2cca3b32f.setIcon(icon_8c124818a3ae49c085144eb053454527);
+        
+    
+            marker_2265d190b9cd45a597e7c3a2cca3b32f.bindTooltip(
+                `<div>
+                     Maquina: 4118010 Tipo Maq: Snack Lata<br>Cliente: 16734<br>Av. Froilan Roa N°6542<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fec4cf54ee1643e997f35edf487813dc = L.marker(
+                [-33.5142474, -70.5996971],
+                {}
+            ).addTo(marker_cluster_23f9b17bdd8e4ed1a397ec36b459ea3c);
+        
+    
+            var icon_2a5da11bb9c84a67b5cf58df9a328f50 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fec4cf54ee1643e997f35edf487813dc.setIcon(icon_2a5da11bb9c84a67b5cf58df9a328f50);
+        
+    
+            marker_fec4cf54ee1643e997f35edf487813dc.bindTooltip(
+                `<div>
+                     Maquina: PSD1079-2 Tipo Maq: Latas<br>Cliente: 16734<br>Av. Froilan Roa N°6542<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
