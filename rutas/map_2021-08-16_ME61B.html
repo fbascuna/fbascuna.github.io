@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0ef5227f2f944acea781e0ff9ae1ec93 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_0ef5227f2f944acea781e0ff9ae1ec93" ></div>
+        
+</body>
+<script>    
+    
+            var map_0ef5227f2f944acea781e0ff9ae1ec93 = L.map(
+                "map_0ef5227f2f944acea781e0ff9ae1ec93",
+                {
+                    center: [-33.519887440364435, -70.75437492094633],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_0ef5227f2f944acea781e0ff9ae1ec93);
+
+            
+
+        
+    
+            var tile_layer_934788a92e2f4e69a4dfa8437d6584bb = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0ef5227f2f944acea781e0ff9ae1ec93);
+        
+    
+            map_0ef5227f2f944acea781e0ff9ae1ec93.fitBounds(
+                [[-33.5221, -70.7554], [-33.5186, -70.7526]],
+                {}
+            );
+        
+    
+            var marker_cluster_20e59f487708461f80d4926a1bf1618f = L.markerClusterGroup(
+                {}
+            );
+            map_0ef5227f2f944acea781e0ff9ae1ec93.addLayer(marker_cluster_20e59f487708461f80d4926a1bf1618f);
+        
+    
+            var marker_2b5cea7138e045db895beb87347fa947 = L.marker(
+                [-33.5202, -70.755],
+                {}
+            ).addTo(marker_cluster_20e59f487708461f80d4926a1bf1618f);
+        
+    
+            var icon_ec5c15f2421d4d63bd2b32fb73c8d8de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2b5cea7138e045db895beb87347fa947.setIcon(icon_ec5c15f2421d4d63bd2b32fb73c8d8de);
+        
+    
+            marker_2b5cea7138e045db895beb87347fa947.bindTooltip(
+                `<div>
+                     Maquina: SLM1833-5 Tipo Maq: Liquido<br>Cliente: 12605<br>Alberto Llona 777 [Fuz]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0fb7d44abfde4e4d914b56cd2155a484 = L.marker(
+                [-33.52029761072822, -70.75500051066979],
+                {}
+            ).addTo(marker_cluster_20e59f487708461f80d4926a1bf1618f);
+        
+    
+            var icon_2173829da47c4adcb91c9e04dbb698fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0fb7d44abfde4e4d914b56cd2155a484.setIcon(icon_2173829da47c4adcb91c9e04dbb698fb);
+        
+    
+            marker_0fb7d44abfde4e4d914b56cd2155a484.bindTooltip(
+                `<div>
+                     Maquina: 2118325 Tipo Maq: Liquido<br>Cliente: 12605<br>Alberto Llona 777 [Fuz]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e5dcf6ff604f416e9361ed3943978292 = L.marker(
+                [-33.5196, -70.7532],
+                {}
+            ).addTo(marker_cluster_20e59f487708461f80d4926a1bf1618f);
+        
+    
+            var icon_208620f5f697465ba1e5d3b9c5747df8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e5dcf6ff604f416e9361ed3943978292.setIcon(icon_208620f5f697465ba1e5d3b9c5747df8);
+        
+    
+            marker_e5dcf6ff604f416e9361ed3943978292.bindTooltip(
+                `<div>
+                     Maquina: 41029171 Tipo Maq: Liquido<br>Cliente: 12605<br>Alberto Llona 777 [Fuz]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ad31786310e841879c9a55d184311153 = L.marker(
+                [-33.52029761072822, -70.75500051066979],
+                {}
+            ).addTo(marker_cluster_20e59f487708461f80d4926a1bf1618f);
+        
+    
+            var icon_c96b1dec3f7944059099d34a34cdfc64 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ad31786310e841879c9a55d184311153.setIcon(icon_c96b1dec3f7944059099d34a34cdfc64);
+        
+    
+            marker_ad31786310e841879c9a55d184311153.bindTooltip(
+                `<div>
+                     Maquina: MIH1080-4 Tipo Maq: Snack Lata<br>Cliente: 12605<br>Alberto Llona 777 [Fuz]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_76c2b5a3049d4bb6ba1fcd28d5c7b2c7 = L.marker(
+                [-33.5198, -70.7554],
+                {}
+            ).addTo(marker_cluster_20e59f487708461f80d4926a1bf1618f);
+        
+    
+            var icon_901057f404634beca053592d31f7712b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_76c2b5a3049d4bb6ba1fcd28d5c7b2c7.setIcon(icon_901057f404634beca053592d31f7712b);
+        
+    
+            marker_76c2b5a3049d4bb6ba1fcd28d5c7b2c7.bindTooltip(
+                `<div>
+                     Maquina: 94715617 Tipo Maq: Liquido<br>Cliente: 12605<br>Alberto Llona 777 [Fuz]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1ea57ffc28b5403a95338094a95902bc = L.marker(
+                [-33.52029761072822, -70.75500051066979],
+                {}
+            ).addTo(marker_cluster_20e59f487708461f80d4926a1bf1618f);
+        
+    
+            var icon_7b374004b188498f89b5e3a127510e36 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1ea57ffc28b5403a95338094a95902bc.setIcon(icon_7b374004b188498f89b5e3a127510e36);
+        
+    
+            marker_1ea57ffc28b5403a95338094a95902bc.bindTooltip(
+                `<div>
+                     Maquina: 84211654 Tipo Maq: Liquido<br>Cliente: 12605<br>Alberto Llona 777 [Fuz]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_59980ec501be4f8b9b433ac55e782d63 = L.marker(
+                [-33.5192, -70.7544],
+                {}
+            ).addTo(marker_cluster_20e59f487708461f80d4926a1bf1618f);
+        
+    
+            var icon_23c4a16670434b98b429352ed0131dad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_59980ec501be4f8b9b433ac55e782d63.setIcon(icon_23c4a16670434b98b429352ed0131dad);
+        
+    
+            marker_59980ec501be4f8b9b433ac55e782d63.bindTooltip(
+                `<div>
+                     Maquina: 12822161 Tipo Maq: Liquido<br>Cliente: 12605<br>Alberto Llona 777 [Fuz]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5f3f879501494f699b47e6e34046d229 = L.marker(
+                [-33.5198, -70.7551],
+                {}
+            ).addTo(marker_cluster_20e59f487708461f80d4926a1bf1618f);
+        
+    
+            var icon_b45c3cb67feb4d8c84b14fef33a7b52a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5f3f879501494f699b47e6e34046d229.setIcon(icon_b45c3cb67feb4d8c84b14fef33a7b52a);
+        
+    
+            marker_5f3f879501494f699b47e6e34046d229.bindTooltip(
+                `<div>
+                     Maquina: 13422364 Tipo Maq: Liquido<br>Cliente: 12605<br>Alberto Llona 777 [Fuz]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_443c163c3d254d56be71208e3d35fef9 = L.marker(
+                [-33.5188, -70.7543],
+                {}
+            ).addTo(marker_cluster_20e59f487708461f80d4926a1bf1618f);
+        
+    
+            var icon_86ad9f4cc6684afe9649c6264860e022 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_443c163c3d254d56be71208e3d35fef9.setIcon(icon_86ad9f4cc6684afe9649c6264860e022);
+        
+    
+            marker_443c163c3d254d56be71208e3d35fef9.bindTooltip(
+                `<div>
+                     Maquina: 90713071 Tipo Maq: Liquido<br>Cliente: 12605<br>Alberto Llona 777 [Fuz]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_95b7f2b360a64e10bb2ca4868cdcb618 = L.marker(
+                [-33.5189, -70.7529],
+                {}
+            ).addTo(marker_cluster_20e59f487708461f80d4926a1bf1618f);
+        
+    
+            var icon_c10879ca35b445e5884fd6aac7dbbb28 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_95b7f2b360a64e10bb2ca4868cdcb618.setIcon(icon_c10879ca35b445e5884fd6aac7dbbb28);
+        
+    
+            marker_95b7f2b360a64e10bb2ca4868cdcb618.bindTooltip(
+                `<div>
+                     Maquina: 41329362 Tipo Maq: Liquido<br>Cliente: 12605<br>Alberto Llona 777 [Fuz]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1e4b461d0b24420785f0f5899022b218 = L.marker(
+                [-33.5186, -70.7526],
+                {}
+            ).addTo(marker_cluster_20e59f487708461f80d4926a1bf1618f);
+        
+    
+            var icon_dfcb30e96a8e4ca3a6da499e1b25e732 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1e4b461d0b24420785f0f5899022b218.setIcon(icon_dfcb30e96a8e4ca3a6da499e1b25e732);
+        
+    
+            marker_1e4b461d0b24420785f0f5899022b218.bindTooltip(
+                `<div>
+                     Maquina: 90713067 Tipo Maq: Liquido<br>Cliente: 12605<br>Alberto Llona 777 [Fuz]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d5171bbd69114a44ab1099ac2d58a7c9 = L.marker(
+                [-33.5206, -70.7537],
+                {}
+            ).addTo(marker_cluster_20e59f487708461f80d4926a1bf1618f);
+        
+    
+            var icon_e4435f2c13f141baab7be30f927c7998 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d5171bbd69114a44ab1099ac2d58a7c9.setIcon(icon_e4435f2c13f141baab7be30f927c7998);
+        
+    
+            marker_d5171bbd69114a44ab1099ac2d58a7c9.bindTooltip(
+                `<div>
+                     Maquina: 41329358 Tipo Maq: Liquido<br>Cliente: 12605<br>Alberto Llona 777 [Fuz]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b14b91dca82b44b7b227e6d59543733a = L.marker(
+                [-33.5208, -70.7546],
+                {}
+            ).addTo(marker_cluster_20e59f487708461f80d4926a1bf1618f);
+        
+    
+            var icon_338aa229846d4af2b9c2d95bb1ae882d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b14b91dca82b44b7b227e6d59543733a.setIcon(icon_338aa229846d4af2b9c2d95bb1ae882d);
+        
+    
+            marker_b14b91dca82b44b7b227e6d59543733a.bindTooltip(
+                `<div>
+                     Maquina: 41029183 Tipo Maq: Liquido<br>Cliente: 12605<br>Alberto Llona 777 [Fuz]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b115f02a4e5446d884fb284a8e158e4b = L.marker(
+                [-33.5191, -70.7543],
+                {}
+            ).addTo(marker_cluster_20e59f487708461f80d4926a1bf1618f);
+        
+    
+            var icon_0f71933f99964441be044edff53301d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b115f02a4e5446d884fb284a8e158e4b.setIcon(icon_0f71933f99964441be044edff53301d3);
+        
+    
+            marker_b115f02a4e5446d884fb284a8e158e4b.bindTooltip(
+                `<div>
+                     Maquina: 4619918 Tipo Maq: Liquido<br>Cliente: 12605<br>Alberto Llona 777 [Fuz]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a759990578204b39a2f0ff3d50459251 = L.marker(
+                [-33.519136212144666, -70.75390583411559],
+                {}
+            ).addTo(marker_cluster_20e59f487708461f80d4926a1bf1618f);
+        
+    
+            var icon_9afc9829a648484f9bc3dffe7400c3c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a759990578204b39a2f0ff3d50459251.setIcon(icon_9afc9829a648484f9bc3dffe7400c3c0);
+        
+    
+            marker_a759990578204b39a2f0ff3d50459251.bindTooltip(
+                `<div>
+                     Maquina: 916867 Tipo Maq: Liquido<br>Cliente: 12605<br>Alberto Llona 777 [Fuz]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b86a8c86674348978935ca966d66da53 = L.marker(
+                [-33.51925696478148, -70.75456565753325],
+                {}
+            ).addTo(marker_cluster_20e59f487708461f80d4926a1bf1618f);
+        
+    
+            var icon_af72684e9b964c8492c6a1b8c413091a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b86a8c86674348978935ca966d66da53.setIcon(icon_af72684e9b964c8492c6a1b8c413091a);
+        
+    
+            marker_b86a8c86674348978935ca966d66da53.bindTooltip(
+                `<div>
+                     Maquina: 92314056 Tipo Maq: Liquido<br>Cliente: 12605<br>Alberto Llona 777 [Fuz]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d98af56d262149dab26c02b4c7b5f9a4 = L.marker(
+                [-33.5211, -70.7552],
+                {}
+            ).addTo(marker_cluster_20e59f487708461f80d4926a1bf1618f);
+        
+    
+            var icon_1931c6f21e46405caf773dcc2f4a9482 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d98af56d262149dab26c02b4c7b5f9a4.setIcon(icon_1931c6f21e46405caf773dcc2f4a9482);
+        
+    
+            marker_d98af56d262149dab26c02b4c7b5f9a4.bindTooltip(
+                `<div>
+                     Maquina: 12021821 Tipo Maq: Liquido<br>Cliente: 12605<br>Alberto Llona 777 [Fuz]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_069913b0b280498cab84aa58799c3c39 = L.marker(
+                [-33.5208, -70.7545],
+                {}
+            ).addTo(marker_cluster_20e59f487708461f80d4926a1bf1618f);
+        
+    
+            var icon_a116b5ea3f784e8caa8e5c9a8c1bba0d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_069913b0b280498cab84aa58799c3c39.setIcon(icon_a116b5ea3f784e8caa8e5c9a8c1bba0d);
+        
+    
+            marker_069913b0b280498cab84aa58799c3c39.bindTooltip(
+                `<div>
+                     Maquina: 84611805 Tipo Maq: Liquido<br>Cliente: 12605<br>Alberto Llona 777 [Fuz]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b69d7acc23af491ab0ca27e1f2a9ace4 = L.marker(
+                [-33.5208, -70.7546],
+                {}
+            ).addTo(marker_cluster_20e59f487708461f80d4926a1bf1618f);
+        
+    
+            var icon_4c1910d3980143bbae819ae776aac411 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b69d7acc23af491ab0ca27e1f2a9ace4.setIcon(icon_4c1910d3980143bbae819ae776aac411);
+        
+    
+            marker_b69d7acc23af491ab0ca27e1f2a9ace4.bindTooltip(
+                `<div>
+                     Maquina: SLM1300-7 Tipo Maq: Liquido<br>Cliente: 12605<br>Alberto Llona 777 [Fuz]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_77756b8a8dc64e70a2b75c5286d6aec9 = L.marker(
+                [-33.5195, -70.7544],
+                {}
+            ).addTo(marker_cluster_20e59f487708461f80d4926a1bf1618f);
+        
+    
+            var icon_1cc5ba5e475e4e1b9b0a341b91a24832 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_77756b8a8dc64e70a2b75c5286d6aec9.setIcon(icon_1cc5ba5e475e4e1b9b0a341b91a24832);
+        
+    
+            marker_77756b8a8dc64e70a2b75c5286d6aec9.bindTooltip(
+                `<div>
+                     Maquina: 1217353 Tipo Maq: Liquido<br>Cliente: 12605<br>Alberto Llona 777 [Fuz]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2afb4fa39d904efa8c2b3b65c568e1c0 = L.marker(
+                [-33.5221, -70.7527],
+                {}
+            ).addTo(marker_cluster_20e59f487708461f80d4926a1bf1618f);
+        
+    
+            var icon_c66ea89b9a3c4d6ebe3975224d31838d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2afb4fa39d904efa8c2b3b65c568e1c0.setIcon(icon_c66ea89b9a3c4d6ebe3975224d31838d);
+        
+    
+            marker_2afb4fa39d904efa8c2b3b65c568e1c0.bindTooltip(
+                `<div>
+                     Maquina: 51567 Tipo Maq: Liquido<br>Cliente: 12605<br>Alberto Llona 777 [Fuz]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e6ff5bdd18784dfa9e319ae0072205b5 = L.marker(
+                [-33.52, -70.7546],
+                {}
+            ).addTo(marker_cluster_20e59f487708461f80d4926a1bf1618f);
+        
+    
+            var icon_174fc4e1217b4307bf90decdf93a5087 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e6ff5bdd18784dfa9e319ae0072205b5.setIcon(icon_174fc4e1217b4307bf90decdf93a5087);
+        
+    
+            marker_e6ff5bdd18784dfa9e319ae0072205b5.bindTooltip(
+                `<div>
+                     Maquina: 93414784 Tipo Maq: Liquido<br>Cliente: 12605<br>Alberto Llona 777 [Fuz]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e04b8bc653004d1988ed9137921e1103 = L.marker(
+                [-33.5203, -70.7545],
+                {}
+            ).addTo(marker_cluster_20e59f487708461f80d4926a1bf1618f);
+        
+    
+            var icon_20ebdb74e63646b98704031ef72d5034 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e04b8bc653004d1988ed9137921e1103.setIcon(icon_20ebdb74e63646b98704031ef72d5034);
+        
+    
+            marker_e04b8bc653004d1988ed9137921e1103.bindTooltip(
+                `<div>
+                     Maquina: 1217183 Tipo Maq: Liquido<br>Cliente: 12605<br>Alberto Llona 777 [Fuz]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b111aa8a453a4ad9adc83596649527ee = L.marker(
+                [-33.5188, -70.7548],
+                {}
+            ).addTo(marker_cluster_20e59f487708461f80d4926a1bf1618f);
+        
+    
+            var icon_c7749be8cb074beea75b5ac617703cac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b111aa8a453a4ad9adc83596649527ee.setIcon(icon_c7749be8cb074beea75b5ac617703cac);
+        
+    
+            marker_b111aa8a453a4ad9adc83596649527ee.bindTooltip(
+                `<div>
+                     Maquina: 42530167 Tipo Maq: Liquido<br>Cliente: 12605<br>Alberto Llona 777 [Fuz]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c1cf07cabe894a008981ccc104efe41f = L.marker(
+                [-33.5191, -70.7551],
+                {}
+            ).addTo(marker_cluster_20e59f487708461f80d4926a1bf1618f);
+        
+    
+            var icon_5cfdf7383fda40b7b7faddd2496502ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c1cf07cabe894a008981ccc104efe41f.setIcon(icon_5cfdf7383fda40b7b7faddd2496502ba);
+        
+    
+            marker_c1cf07cabe894a008981ccc104efe41f.bindTooltip(
+                `<div>
+                     Maquina: SLM1256-6 Tipo Maq: Liquido<br>Cliente: 12605<br>Alberto Llona 777 [Fuz]<br>Maquina sin energía eléctrica, tanto el enchufe de la máquina, como el toma corriente están en buen estado
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
