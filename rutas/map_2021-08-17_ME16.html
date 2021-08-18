@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0bbe824ebd05471f844027b89ca616a5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_0bbe824ebd05471f844027b89ca616a5" ></div>
+        
+</body>
+<script>    
+    
+            var map_0bbe824ebd05471f844027b89ca616a5 = L.map(
+                "map_0bbe824ebd05471f844027b89ca616a5",
+                {
+                    center: [-33.47407620873502, -70.64289772759126],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_0bbe824ebd05471f844027b89ca616a5);
+
+            
+
+        
+    
+            var tile_layer_8cd95b5df8c946a6b584bc2be6061fe6 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0bbe824ebd05471f844027b89ca616a5);
+        
+    
+
+        function geo_json_9754926caf684ac3a796ad2051df1b7b_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_9754926caf684ac3a796ad2051df1b7b = L.geoJson(null, {
+                onEachFeature: geo_json_9754926caf684ac3a796ad2051df1b7b_onEachFeature,
+            
+        });
+
+        function geo_json_9754926caf684ac3a796ad2051df1b7b_add (data) {
+            geo_json_9754926caf684ac3a796ad2051df1b7b
+                .addData(data)
+                .addTo(map_0bbe824ebd05471f844027b89ca616a5);
+        }
+            geo_json_9754926caf684ac3a796ad2051df1b7b_add({"coordinates": [[-70.647979, -33.486322], [-70.648047, -33.486587], [-70.650092, -33.48619], [-70.649774, -33.485053], [-70.648575, -33.485326], [-70.646783, -33.485932], [-70.646545, -33.485927], [-70.64638, -33.48604], [-70.646104, -33.486129], [-70.646056, -33.485973]], "type": "LineString"});
+
+        
+    
+
+        function geo_json_191fe587adb642d0be08cbbcfe3dee94_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_191fe587adb642d0be08cbbcfe3dee94 = L.geoJson(null, {
+                onEachFeature: geo_json_191fe587adb642d0be08cbbcfe3dee94_onEachFeature,
+            
+        });
+
+        function geo_json_191fe587adb642d0be08cbbcfe3dee94_add (data) {
+            geo_json_191fe587adb642d0be08cbbcfe3dee94
+                .addData(data)
+                .addTo(map_0bbe824ebd05471f844027b89ca616a5);
+        }
+            geo_json_191fe587adb642d0be08cbbcfe3dee94_add({"coordinates": [[-70.647509, -33.485674], [-70.649774, -33.485053], [-70.648214, -33.479656], [-70.641599, -33.48097], [-70.642007, -33.476464], [-70.642132, -33.47227]], "type": "LineString"});
+
+        
+    
+
+        function geo_json_74ea42353b8e48f38ba1ccfa0d2bb5af_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_74ea42353b8e48f38ba1ccfa0d2bb5af = L.geoJson(null, {
+                onEachFeature: geo_json_74ea42353b8e48f38ba1ccfa0d2bb5af_onEachFeature,
+            
+        });
+
+        function geo_json_74ea42353b8e48f38ba1ccfa0d2bb5af_add (data) {
+            geo_json_74ea42353b8e48f38ba1ccfa0d2bb5af
+                .addData(data)
+                .addTo(map_0bbe824ebd05471f844027b89ca616a5);
+        }
+            geo_json_74ea42353b8e48f38ba1ccfa0d2bb5af_add({"coordinates": [[-70.642132, -33.47227], [-70.642575, -33.464263], [-70.640225, -33.463932], [-70.640322, -33.462857], [-70.640603, -33.462883]], "type": "LineString"});
+
+        
+    
+
+        function geo_json_ffd3ce46e4374c93ba287b69869cc3a5_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_ffd3ce46e4374c93ba287b69869cc3a5 = L.geoJson(null, {
+                onEachFeature: geo_json_ffd3ce46e4374c93ba287b69869cc3a5_onEachFeature,
+            
+        });
+
+        function geo_json_ffd3ce46e4374c93ba287b69869cc3a5_add (data) {
+            geo_json_ffd3ce46e4374c93ba287b69869cc3a5
+                .addData(data)
+                .addTo(map_0bbe824ebd05471f844027b89ca616a5);
+        }
+            geo_json_ffd3ce46e4374c93ba287b69869cc3a5_add({"coordinates": [[-70.640603, -33.462883], [-70.65104, -33.463991], [-70.650576, -33.46701]], "type": "LineString"});
+
+        
+    
+
+        function geo_json_9593bcd7c2b94140bb4068a2c610e58e_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_9593bcd7c2b94140bb4068a2c610e58e = L.geoJson(null, {
+                onEachFeature: geo_json_9593bcd7c2b94140bb4068a2c610e58e_onEachFeature,
+            
+        });
+
+        function geo_json_9593bcd7c2b94140bb4068a2c610e58e_add (data) {
+            geo_json_9593bcd7c2b94140bb4068a2c610e58e
+                .addData(data)
+                .addTo(map_0bbe824ebd05471f844027b89ca616a5);
+        }
+            geo_json_9593bcd7c2b94140bb4068a2c610e58e_add({"coordinates": [[-70.650576, -33.46701], [-70.650284, -33.468832], [-70.652292, -33.469043], [-70.652324, -33.468782]], "type": "LineString"});
+
+        
+    
+
+        function geo_json_3defb7c7400546e8a82177dd7ea0abed_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_3defb7c7400546e8a82177dd7ea0abed = L.geoJson(null, {
+                onEachFeature: geo_json_3defb7c7400546e8a82177dd7ea0abed_onEachFeature,
+            
+        });
+
+        function geo_json_3defb7c7400546e8a82177dd7ea0abed_add (data) {
+            geo_json_3defb7c7400546e8a82177dd7ea0abed
+                .addData(data)
+                .addTo(map_0bbe824ebd05471f844027b89ca616a5);
+        }
+            geo_json_3defb7c7400546e8a82177dd7ea0abed_add({"coordinates": [[-70.652324, -33.468782], [-70.652588, -33.466519], [-70.650683, -33.466338], [-70.649423, -33.474533], [-70.648427, -33.474483], [-70.648337, -33.479625], [-70.650663, -33.487696], [-70.651143, -33.487596], [-70.650818, -33.486442], [-70.651374, -33.486342]], "type": "LineString"});
+
+        
+    
+            map_0bbe824ebd05471f844027b89ca616a5.fitBounds(
+                [[-33.4862957, -70.65249962638933], [-33.46297150000001, -70.60702]],
+                {}
+            );
+        
+    
+            var marker_cluster_961b88ab773044e0a15d767b522627ea = L.markerClusterGroup(
+                {}
+            );
+            map_0bbe824ebd05471f844027b89ca616a5.addLayer(marker_cluster_961b88ab773044e0a15d767b522627ea);
+        
+    
+            var marker_036d65f63b3a40279ef3d3e2ff42d62d = L.marker(
+                [-33.4862957, -70.64812189999999],
+                {}
+            ).addTo(marker_cluster_961b88ab773044e0a15d767b522627ea);
+        
+    
+            var icon_afd53541c3e346c8966fafd8b8469cde = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_036d65f63b3a40279ef3d3e2ff42d62d.setIcon(icon_afd53541c3e346c8966fafd8b8469cde);
+        
+    
+            marker_036d65f63b3a40279ef3d3e2ff42d62d.bindTooltip(
+                `<div>
+                     Maquina: 314240 Tipo Maq: Snack<br>Cliente: 16786<br>Alcalde Pedro Alarcón #997<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ab688477fce54cfc83d80d2338541c9f = L.marker(
+                [-33.4862957, -70.64812189999999],
+                {}
+            ).addTo(marker_cluster_961b88ab773044e0a15d767b522627ea);
+        
+    
+            var icon_2cc70237c43f4c1881353fb7d5b24002 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ab688477fce54cfc83d80d2338541c9f.setIcon(icon_2cc70237c43f4c1881353fb7d5b24002);
+        
+    
+            marker_ab688477fce54cfc83d80d2338541c9f.bindTooltip(
+                `<div>
+                     Maquina: SLM1864-5 Tipo Maq: Liquido<br>Cliente: 16786<br>Alcalde Pedro Alarcón #997<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5a2fca17b91441e180c5def8e556f3b6 = L.marker(
+                [-33.485980388312846, -70.64602164362489],
+                {}
+            ).addTo(marker_cluster_961b88ab773044e0a15d767b522627ea);
+        
+    
+            var icon_52a2bdb5ae1946a1a8e60e9e73a52b71 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5a2fca17b91441e180c5def8e556f3b6.setIcon(icon_52a2bdb5ae1946a1a8e60e9e73a52b71);
+        
+    
+            marker_5a2fca17b91441e180c5def8e556f3b6.bindTooltip(
+                `<div>
+                     Maquina: SLM2376-7 Tipo Maq: Liquido<br>Cliente: 7335<br>Gran Jose Miguel Carrera 3204 [Lps]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_608e588d6d1c492ba660e5ad5c0a3a65 = L.marker(
+                [-33.48485132527454, -70.64451624462262],
+                {}
+            ).addTo(marker_cluster_961b88ab773044e0a15d767b522627ea);
+        
+    
+            var icon_7850508f83ac46099564af1ac64d6880 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_608e588d6d1c492ba660e5ad5c0a3a65.setIcon(icon_7850508f83ac46099564af1ac64d6880);
+        
+    
+            marker_608e588d6d1c492ba660e5ad5c0a3a65.bindTooltip(
+                `<div>
+                     Maquina: SLM1598-0 Tipo Maq: Liquido<br>Cliente: 7335<br>Gran Jose Miguel Carrera 3204 [Lps]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7be4edec2d6b4195bdab602fc58d2b4e = L.marker(
+                [-33.48540770974977, -70.64738420580444],
+                {}
+            ).addTo(marker_cluster_961b88ab773044e0a15d767b522627ea);
+        
+    
+            var icon_c69aa362f5fd4970a56893d03c8939fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7be4edec2d6b4195bdab602fc58d2b4e.setIcon(icon_c69aa362f5fd4970a56893d03c8939fd);
+        
+    
+            marker_7be4edec2d6b4195bdab602fc58d2b4e.bindTooltip(
+                `<div>
+                     Maquina: 2693 Tipo Maq: Snack Lata<br>Cliente: 7335<br>Gran Jose Miguel Carrera 3204 [Lps]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5a20bdeaf7c24e17bda5ee6ded33adf9 = L.marker(
+                [-33.47228815990796, -70.64270063505705],
+                {}
+            ).addTo(marker_cluster_961b88ab773044e0a15d767b522627ea);
+        
+    
+            var icon_048c84f99c2a476ca2e99529af88b451 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5a20bdeaf7c24e17bda5ee6ded33adf9.setIcon(icon_048c84f99c2a476ca2e99529af88b451);
+        
+    
+            marker_5a20bdeaf7c24e17bda5ee6ded33adf9.bindTooltip(
+                `<div>
+                     Maquina: 4054006 Tipo Maq: Snack Lata<br>Cliente: 12177<br>Santa Rosa 2055 [Odv]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_40e7ecb4235c4bd88405bf515431a03b = L.marker(
+                [-33.47228815990796, -70.64270063505705],
+                {}
+            ).addTo(marker_cluster_961b88ab773044e0a15d767b522627ea);
+        
+    
+            var icon_38553293c3994de7ab8756c7ebaaecfe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_40e7ecb4235c4bd88405bf515431a03b.setIcon(icon_38553293c3994de7ab8756c7ebaaecfe);
+        
+    
+            marker_40e7ecb4235c4bd88405bf515431a03b.bindTooltip(
+                `<div>
+                     Maquina: SLM1188-8 Tipo Maq: Liquido<br>Cliente: 12177<br>Santa Rosa 2055 [Odv]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8687a85361584de7b52c3d2265c9a706 = L.marker(
+                [-33.46297150000001, -70.6405915],
+                {}
+            ).addTo(marker_cluster_961b88ab773044e0a15d767b522627ea);
+        
+    
+            var icon_f68f2c66e2844d93a648d7bb8419e167 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8687a85361584de7b52c3d2265c9a706.setIcon(icon_f68f2c66e2844d93a648d7bb8419e167);
+        
+    
+            marker_8687a85361584de7b52c3d2265c9a706.bindTooltip(
+                `<div>
+                     Maquina: 20143637068 Tipo Maq: Liquido<br>Cliente: 16793<br>Victoria 612<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1c0fe9b6efd44578914fad3d945c72af = L.marker(
+                [-33.464095, -70.60702],
+                {}
+            ).addTo(marker_cluster_961b88ab773044e0a15d767b522627ea);
+        
+    
+            var icon_5c075b9a121e4988ba1549ff532fd488 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1c0fe9b6efd44578914fad3d945c72af.setIcon(icon_5c075b9a121e4988ba1549ff532fd488);
+        
+    
+            marker_1c0fe9b6efd44578914fad3d945c72af.bindTooltip(
+                `<div>
+                     Maquina: 20143637079 Tipo Maq: Liquido<br>Cliente: 16793<br>Victoria 612<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1b1259eedfd34f0d9008185bfabfe1be = L.marker(
+                [-33.46297150000001, -70.6405915],
+                {}
+            ).addTo(marker_cluster_961b88ab773044e0a15d767b522627ea);
+        
+    
+            var icon_23faae552d7b464a86823c66220e8967 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1b1259eedfd34f0d9008185bfabfe1be.setIcon(icon_23faae552d7b464a86823c66220e8967);
+        
+    
+            marker_1b1259eedfd34f0d9008185bfabfe1be.bindTooltip(
+                `<div>
+                     Maquina: 24010804 Tipo Maq: Liquido<br>Cliente: 16793<br>Victoria 612<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_08a5dc5bbce842edbfa3c52ceaa559ec = L.marker(
+                [-33.46297150000001, -70.6405915],
+                {}
+            ).addTo(marker_cluster_961b88ab773044e0a15d767b522627ea);
+        
+    
+            var icon_19ca6a54e6df47839c1261a4016d5e39 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_08a5dc5bbce842edbfa3c52ceaa559ec.setIcon(icon_19ca6a54e6df47839c1261a4016d5e39);
+        
+    
+            marker_08a5dc5bbce842edbfa3c52ceaa559ec.bindTooltip(
+                `<div>
+                     Maquina: 24110920 Tipo Maq: Liquido<br>Cliente: 16793<br>Victoria 612<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_25b2eb7768424f37b92c0281c7815f25 = L.marker(
+                [-33.46297150000001, -70.6405915],
+                {}
+            ).addTo(marker_cluster_961b88ab773044e0a15d767b522627ea);
+        
+    
+            var icon_70f527a2f1454d22958011ce23d2f280 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_25b2eb7768424f37b92c0281c7815f25.setIcon(icon_70f527a2f1454d22958011ce23d2f280);
+        
+    
+            marker_25b2eb7768424f37b92c0281c7815f25.bindTooltip(
+                `<div>
+                     Maquina: SLM2435-6 Tipo Maq: Liquido<br>Cliente: 16793<br>Victoria 612<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_69658a70cef84cf799a573e9b3c802ce = L.marker(
+                [-33.46699211875428, -70.65041675214957],
+                {}
+            ).addTo(marker_cluster_961b88ab773044e0a15d767b522627ea);
+        
+    
+            var icon_21bb29783f704b6ab59506d83dae605a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_69658a70cef84cf799a573e9b3c802ce.setIcon(icon_21bb29783f704b6ab59506d83dae605a);
+        
+    
+            marker_69658a70cef84cf799a573e9b3c802ce.bindTooltip(
+                `<div>
+                     Maquina: SLM1286-8 Tipo Maq: Liquido<br>Cliente: 16200<br>Nataniel Cox  Nº1558<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f16f31de25734355bf7998c5cb57e519 = L.marker(
+                [-33.46879741719196, -70.65249962638933],
+                {}
+            ).addTo(marker_cluster_961b88ab773044e0a15d767b522627ea);
+        
+    
+            var icon_728ab8a297b94762914ec09328788a89 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f16f31de25734355bf7998c5cb57e519.setIcon(icon_728ab8a297b94762914ec09328788a89);
+        
+    
+            marker_f16f31de25734355bf7998c5cb57e519.bindTooltip(
+                `<div>
+                     Maquina: SLM1792-4 Tipo Maq: Liquido<br>Cliente: 14023<br>Lord Cochrane 1691 [Nef]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ed804282f89b4326947a963c2b872a22 = L.marker(
+                [-33.48596545192596, -70.65159637116393],
+                {}
+            ).addTo(marker_cluster_961b88ab773044e0a15d767b522627ea);
+        
+    
+            var icon_2dd4c8393cef4d0db45fe5407b48c403 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ed804282f89b4326947a963c2b872a22.setIcon(icon_2dd4c8393cef4d0db45fe5407b48c403);
+        
+    
+            marker_ed804282f89b4326947a963c2b872a22.bindTooltip(
+                `<div>
+                     Maquina: 51311780 Tipo Maq: Snack Lata<br>Cliente: 16129<br>El Llano Subercaseaux  3519<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
