@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b71688071c7249b59bd266cd9eca519e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b71688071c7249b59bd266cd9eca519e" ></div>
+        
+</body>
+<script>    
+    
+            var map_b71688071c7249b59bd266cd9eca519e = L.map(
+                "map_b71688071c7249b59bd266cd9eca519e",
+                {
+                    center: [-33.30598478737539, -71.40699757110569],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_b71688071c7249b59bd266cd9eca519e);
+
+            
+
+        
+    
+            var tile_layer_994ee97df8f24be1bb0b87eef4ea92e8 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b71688071c7249b59bd266cd9eca519e);
+        
+    
+            map_b71688071c7249b59bd266cd9eca519e.fitBounds(
+                [[-33.30612046647808, -71.40729487279967], [-33.305900784234744, -71.40679061750487]],
+                {}
+            );
+        
+    
+            var marker_cluster_f0f87a3b63dd4ad7b611e55bd9c9b758 = L.markerClusterGroup(
+                {}
+            );
+            map_b71688071c7249b59bd266cd9eca519e.addLayer(marker_cluster_f0f87a3b63dd4ad7b611e55bd9c9b758);
+        
+    
+            var marker_e8f5dd0644364a3a921c817589797dcd = L.marker(
+                [-33.30592768413102, -71.4070481095703],
+                {}
+            ).addTo(marker_cluster_f0f87a3b63dd4ad7b611e55bd9c9b758);
+        
+    
+            var icon_e094f492c96045c1873d5d4a474da562 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e8f5dd0644364a3a921c817589797dcd.setIcon(icon_e094f492c96045c1873d5d4a474da562);
+        
+    
+            marker_e8f5dd0644364a3a921c817589797dcd.bindTooltip(
+                `<div>
+                     Maquina: CTO1079-3 Tipo Maq: Liquido<br>Cliente: 10571<br>Fundo La Rotunda Ruta 68 [Aon]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_83b2cd5bf8cc43bd9eb438ca1ccf6a25 = L.marker(
+                [-33.30612046647808, -71.40729487279967],
+                {}
+            ).addTo(marker_cluster_f0f87a3b63dd4ad7b611e55bd9c9b758);
+        
+    
+            var icon_df040199004e4d28ba3c11f513bb425b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_83b2cd5bf8cc43bd9eb438ca1ccf6a25.setIcon(icon_df040199004e4d28ba3c11f513bb425b);
+        
+    
+            marker_83b2cd5bf8cc43bd9eb438ca1ccf6a25.bindTooltip(
+                `<div>
+                     Maquina: 2200001456 Tipo Maq: Snack Lata<br>Cliente: 10571<br>Fundo La Rotunda Ruta 68 [Aon]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1f357b8cca784c818743fc33bb5fdb25 = L.marker(
+                [-33.30592768413102, -71.4070481095703],
+                {}
+            ).addTo(marker_cluster_f0f87a3b63dd4ad7b611e55bd9c9b758);
+        
+    
+            var icon_b09605eb930a450ca865d83f2ec34333 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1f357b8cca784c818743fc33bb5fdb25.setIcon(icon_b09605eb930a450ca865d83f2ec34333);
+        
+    
+            marker_1f357b8cca784c818743fc33bb5fdb25.bindTooltip(
+                `<div>
+                     Maquina: DLC1167-1 Tipo Maq: Latas<br>Cliente: 10571<br>Fundo La Rotunda Ruta 68 [Aon]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_379120b8774e484d86c19d5107700fcc = L.marker(
+                [-33.30592768413102, -71.4070481095703],
+                {}
+            ).addTo(marker_cluster_f0f87a3b63dd4ad7b611e55bd9c9b758);
+        
+    
+            var icon_9bcae6132f9f439e91fd47623fed96b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_379120b8774e484d86c19d5107700fcc.setIcon(icon_9bcae6132f9f439e91fd47623fed96b9);
+        
+    
+            marker_379120b8774e484d86c19d5107700fcc.bindTooltip(
+                `<div>
+                     Maquina: SLM1562-K Tipo Maq: Liquido<br>Cliente: 10571<br>Fundo La Rotunda Ruta 68 [Aon]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f0e4216eb0a44f38912b7a9e677c489e = L.marker(
+                [-33.30592768413102, -71.4070481095703],
+                {}
+            ).addTo(marker_cluster_f0f87a3b63dd4ad7b611e55bd9c9b758);
+        
+    
+            var icon_017b924541dd4892860e436f2b2da29b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f0e4216eb0a44f38912b7a9e677c489e.setIcon(icon_017b924541dd4892860e436f2b2da29b);
+        
+    
+            marker_f0e4216eb0a44f38912b7a9e677c489e.bindTooltip(
+                `<div>
+                     Maquina: 2200001471 Tipo Maq: Snack Lata<br>Cliente: 10571<br>Fundo La Rotunda Ruta 68 [Aon]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_be168194081449108b65ce603590d442 = L.marker(
+                [-33.305900784234744, -71.40679061750487],
+                {}
+            ).addTo(marker_cluster_f0f87a3b63dd4ad7b611e55bd9c9b758);
+        
+    
+            var icon_e6aec431e0a848549481b618f44c7dce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_be168194081449108b65ce603590d442.setIcon(icon_e6aec431e0a848549481b618f44c7dce);
+        
+    
+            marker_be168194081449108b65ce603590d442.bindTooltip(
+                `<div>
+                     Maquina: SLM1931-5 Tipo Maq: Liquido<br>Cliente: 10571<br>Fundo La Rotunda Ruta 68 [Aon]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d7362cd4e83b4fa99916f46884566643 = L.marker(
+                [-33.305900784234744, -71.40679061750487],
+                {}
+            ).addTo(marker_cluster_f0f87a3b63dd4ad7b611e55bd9c9b758);
+        
+    
+            var icon_2fc06b2674dd4be993b640da11a31389 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d7362cd4e83b4fa99916f46884566643.setIcon(icon_2fc06b2674dd4be993b640da11a31389);
+        
+    
+            marker_d7362cd4e83b4fa99916f46884566643.bindTooltip(
+                `<div>
+                     Maquina: MIH1132-0 Tipo Maq: Snack Lata<br>Cliente: 10571<br>Fundo La Rotunda Ruta 68 [Aon]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3a469c42fd2f4e42b0468f67c50454b9 = L.marker(
+                [-33.30596355064646, -71.4068335328491],
+                {}
+            ).addTo(marker_cluster_f0f87a3b63dd4ad7b611e55bd9c9b758);
+        
+    
+            var icon_fe94f160c12b41cf8871c5a2701a6db1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3a469c42fd2f4e42b0468f67c50454b9.setIcon(icon_fe94f160c12b41cf8871c5a2701a6db1);
+        
+    
+            marker_3a469c42fd2f4e42b0468f67c50454b9.bindTooltip(
+                `<div>
+                     Maquina: 2200001454 Tipo Maq: Snack Lata<br>Cliente: 10571<br>Fundo La Rotunda Ruta 68 [Aon]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_893bf5c883484d6ebfe5b5496d6360e1 = L.marker(
+                [-33.30602631701299, -71.40693009237364],
+                {}
+            ).addTo(marker_cluster_f0f87a3b63dd4ad7b611e55bd9c9b758);
+        
+    
+            var icon_82cce98c6cd649519363866bb94bee7c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_893bf5c883484d6ebfe5b5496d6360e1.setIcon(icon_82cce98c6cd649519363866bb94bee7c);
+        
+    
+            marker_893bf5c883484d6ebfe5b5496d6360e1.bindTooltip(
+                `<div>
+                     Maquina: 2210152 Tipo Maq: Liquido<br>Cliente: 10571<br>Fundo La Rotunda Ruta 68 [Aon]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_89aeb1640abe442492d0d87f40fd2a35 = L.marker(
+                [-33.30599045052335, -71.40711248258665],
+                {}
+            ).addTo(marker_cluster_f0f87a3b63dd4ad7b611e55bd9c9b758);
+        
+    
+            var icon_9850e4d17e94407aabaa37d99bbab4e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_89aeb1640abe442492d0d87f40fd2a35.setIcon(icon_9850e4d17e94407aabaa37d99bbab4e5);
+        
+    
+            marker_89aeb1640abe442492d0d87f40fd2a35.bindTooltip(
+                `<div>
+                     Maquina: SLM1736-3 Tipo Maq: Liquido<br>Cliente: 10571<br>Fundo La Rotunda Ruta 68 [Aon]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cfbf386bb1ed45c8b7000faa7f0458ca = L.marker(
+                [-33.30599045052335, -71.40711248258665],
+                {}
+            ).addTo(marker_cluster_f0f87a3b63dd4ad7b611e55bd9c9b758);
+        
+    
+            var icon_1ad5b96885a74ea6af3a8e4ee54c9b53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cfbf386bb1ed45c8b7000faa7f0458ca.setIcon(icon_1ad5b96885a74ea6af3a8e4ee54c9b53);
+        
+    
+            marker_cfbf386bb1ed45c8b7000faa7f0458ca.bindTooltip(
+                `<div>
+                     Maquina: 2200001458 Tipo Maq: Snack Lata<br>Cliente: 10571<br>Fundo La Rotunda Ruta 68 [Aon]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5e5bef12e9e24632a05c9fe0a1d51a7e = L.marker(
+                [-33.30600838377001, -71.40682280401305],
+                {}
+            ).addTo(marker_cluster_f0f87a3b63dd4ad7b611e55bd9c9b758);
+        
+    
+            var icon_db502efce2044f9fb4bca10409a39f26 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5e5bef12e9e24632a05c9fe0a1d51a7e.setIcon(icon_db502efce2044f9fb4bca10409a39f26);
+        
+    
+            marker_5e5bef12e9e24632a05c9fe0a1d51a7e.bindTooltip(
+                `<div>
+                     Maquina: SLM2038-0 Tipo Maq: Liquido<br>Cliente: 10571<br>Fundo La Rotunda Ruta 68 [Aon]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_822d1516b63d4987be294c78d87321b5 = L.marker(
+                [-33.30600838377001, -71.40682280401305],
+                {}
+            ).addTo(marker_cluster_f0f87a3b63dd4ad7b611e55bd9c9b758);
+        
+    
+            var icon_9b25690742ba42a0b7c3a029ef1cac4d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_822d1516b63d4987be294c78d87321b5.setIcon(icon_9b25690742ba42a0b7c3a029ef1cac4d);
+        
+    
+            marker_822d1516b63d4987be294c78d87321b5.bindTooltip(
+                `<div>
+                     Maquina: 21022955 Tipo Maq: Snack<br>Cliente: 10571<br>Fundo La Rotunda Ruta 68 [Aon]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_18724f368a114287a42d3004493e19a3 = L.marker(
+                [-33.30599493383537, -71.40682816843108],
+                {}
+            ).addTo(marker_cluster_f0f87a3b63dd4ad7b611e55bd9c9b758);
+        
+    
+            var icon_e69beac044cf474db9205fe0add868f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_18724f368a114287a42d3004493e19a3.setIcon(icon_e69beac044cf474db9205fe0add868f6);
+        
+    
+            marker_18724f368a114287a42d3004493e19a3.bindTooltip(
+                `<div>
+                     Maquina: DLC1160-4 Tipo Maq: Latas<br>Cliente: 10571<br>Fundo La Rotunda Ruta 68 [Aon]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_24799bed5aad41638621178b7a23f066 = L.marker(
+                [-33.30602631701299, -71.40712321142271],
+                {}
+            ).addTo(marker_cluster_f0f87a3b63dd4ad7b611e55bd9c9b758);
+        
+    
+            var icon_434298498c004cc3b1143d27d405a62d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_24799bed5aad41638621178b7a23f066.setIcon(icon_434298498c004cc3b1143d27d405a62d);
+        
+    
+            marker_24799bed5aad41638621178b7a23f066.bindTooltip(
+                `<div>
+                     Maquina: DLC1200-7 Tipo Maq: Latas<br>Cliente: 10571<br>Fundo La Rotunda Ruta 68 [Aon]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ba16b9ff062d43f9ab486b65e80a54fb = L.marker(
+                [-33.30602631701299, -71.40712321142271],
+                {}
+            ).addTo(marker_cluster_f0f87a3b63dd4ad7b611e55bd9c9b758);
+        
+    
+            var icon_e27f7fdebf68409e8fafe7f9ac268bfa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ba16b9ff062d43f9ab486b65e80a54fb.setIcon(icon_e27f7fdebf68409e8fafe7f9ac268bfa);
+        
+    
+            marker_ba16b9ff062d43f9ab486b65e80a54fb.bindTooltip(
+                `<div>
+                     Maquina: 290016 Tipo Maq: Snack Lata<br>Cliente: 10571<br>Fundo La Rotunda Ruta 68 [Aon]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1f6697bb513b42a1be14fbb547344ed5 = L.marker(
+                [-33.30602631701299, -71.40712321142271],
+                {}
+            ).addTo(marker_cluster_f0f87a3b63dd4ad7b611e55bd9c9b758);
+        
+    
+            var icon_7a715c92e99e4ecb9d048010d07b4c40 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1f6697bb513b42a1be14fbb547344ed5.setIcon(icon_7a715c92e99e4ecb9d048010d07b4c40);
+        
+    
+            marker_1f6697bb513b42a1be14fbb547344ed5.bindTooltip(
+                `<div>
+                     Maquina: SLM2026-7 Tipo Maq: Liquido<br>Cliente: 10571<br>Fundo La Rotunda Ruta 68 [Aon]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e608933e5076423194e2f025c173f741 = L.marker(
+                [-33.30600838377001, -71.40702665189818],
+                {}
+            ).addTo(marker_cluster_f0f87a3b63dd4ad7b611e55bd9c9b758);
+        
+    
+            var icon_df5e95d554ec4f528ec747f5196141b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e608933e5076423194e2f025c173f741.setIcon(icon_df5e95d554ec4f528ec747f5196141b4);
+        
+    
+            marker_e608933e5076423194e2f025c173f741.bindTooltip(
+                `<div>
+                     Maquina: DLC1315-1 Tipo Maq: Latas<br>Cliente: 10571<br>Fundo La Rotunda Ruta 68 [Aon]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_da2f3bced08a4b0f9a194342b86b3197 = L.marker(
+                [-33.30600838377001, -71.40702665189818],
+                {}
+            ).addTo(marker_cluster_f0f87a3b63dd4ad7b611e55bd9c9b758);
+        
+    
+            var icon_7afacfac68064a63823a1e6351bc8850 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_da2f3bced08a4b0f9a194342b86b3197.setIcon(icon_7afacfac68064a63823a1e6351bc8850);
+        
+    
+            marker_da2f3bced08a4b0f9a194342b86b3197.bindTooltip(
+                `<div>
+                     Maquina: 314034 Tipo Maq: Snack<br>Cliente: 10571<br>Fundo La Rotunda Ruta 68 [Aon]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

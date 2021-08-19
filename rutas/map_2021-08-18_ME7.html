@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e5d1a6c520784e4b892176a8fdc2ff25 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_e5d1a6c520784e4b892176a8fdc2ff25" ></div>
+        
+</body>
+<script>    
+    
+            var map_e5d1a6c520784e4b892176a8fdc2ff25 = L.map(
+                "map_e5d1a6c520784e4b892176a8fdc2ff25",
+                {
+                    center: [-33.51898531190019, -70.59699886779099],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_e5d1a6c520784e4b892176a8fdc2ff25);
+
+            
+
+        
+    
+            var tile_layer_31ce99912b414aa6a5604269f53739dd = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e5d1a6c520784e4b892176a8fdc2ff25);
+        
+    
+            map_e5d1a6c520784e4b892176a8fdc2ff25.fitBounds(
+                [[-33.5190332, -70.5970676], [-33.518869972336866, -70.59679803558197]],
+                {}
+            );
+        
+    
+            var marker_cluster_e439b03c2df5438b903680300676d161 = L.markerClusterGroup(
+                {}
+            );
+            map_e5d1a6c520784e4b892176a8fdc2ff25.addLayer(marker_cluster_e439b03c2df5438b903680300676d161);
+        
+    
+            var marker_6197e4f6a7084311864dd8d6f065a92e = L.marker(
+                [-33.51901531068483, -70.5970676],
+                {}
+            ).addTo(marker_cluster_e439b03c2df5438b903680300676d161);
+        
+    
+            var icon_3ac22981c4174506b367c48f1b2a2744 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6197e4f6a7084311864dd8d6f065a92e.setIcon(icon_3ac22981c4174506b367c48f1b2a2744);
+        
+    
+            marker_6197e4f6a7084311864dd8d6f065a92e.bindTooltip(
+                `<div>
+                     Maquina: CTO1099-1 Tipo Maq: Liquido<br>Cliente: 11319<br>Serafin Zamora 190 [Dft]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_08f5a00aea5a4336959533e303cf4fd7 = L.marker(
+                [-33.51901531068483, -70.5970676],
+                {}
+            ).addTo(marker_cluster_e439b03c2df5438b903680300676d161);
+        
+    
+            var icon_aa06fb28aabc40c18c40622fa1630730 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_08f5a00aea5a4336959533e303cf4fd7.setIcon(icon_aa06fb28aabc40c18c40622fa1630730);
+        
+    
+            marker_08f5a00aea5a4336959533e303cf4fd7.bindTooltip(
+                `<div>
+                     Maquina: MIH1117-2 Tipo Maq: Snack Lata<br>Cliente: 11319<br>Serafin Zamora 190 [Dft]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4e370ca0c0e54e5b921fc6480ec10e8c = L.marker(
+                [-33.518883389346136, -70.59682485767212],
+                {}
+            ).addTo(marker_cluster_e439b03c2df5438b903680300676d161);
+        
+    
+            var icon_cf8a87c5e74e4c0ea17889d36c2c4cba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4e370ca0c0e54e5b921fc6480ec10e8c.setIcon(icon_cf8a87c5e74e4c0ea17889d36c2c4cba);
+        
+    
+            marker_4e370ca0c0e54e5b921fc6480ec10e8c.bindTooltip(
+                `<div>
+                     Maquina: PSL1070-1 Tipo Maq: Snack Lata<br>Cliente: 11319<br>Serafin Zamora 190 [Dft]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c543ed3f6cb24aaa8d0b55bec72f7772 = L.marker(
+                [-33.519028727671554, -70.59706223558197],
+                {}
+            ).addTo(marker_cluster_e439b03c2df5438b903680300676d161);
+        
+    
+            var icon_cf00ab3a4dcb44d0af799c1490c1eb75 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c543ed3f6cb24aaa8d0b55bec72f7772.setIcon(icon_cf00ab3a4dcb44d0af799c1490c1eb75);
+        
+    
+            marker_c543ed3f6cb24aaa8d0b55bec72f7772.bindTooltip(
+                `<div>
+                     Maquina: PSD1101-9 Tipo Maq: Latas<br>Cliente: 11319<br>Serafin Zamora 190 [Dft]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1aae9b22be93466bb47c275330b49ba9 = L.marker(
+                [-33.51899742136595, -70.59702468465576],
+                {}
+            ).addTo(marker_cluster_e439b03c2df5438b903680300676d161);
+        
+    
+            var icon_345c5a0ef4654d2eba487c5b53e8f123 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1aae9b22be93466bb47c275330b49ba9.setIcon(icon_345c5a0ef4654d2eba487c5b53e8f123);
+        
+    
+            marker_1aae9b22be93466bb47c275330b49ba9.bindTooltip(
+                `<div>
+                     Maquina: CTO1087-9 Tipo Maq: Liquido<br>Cliente: 11319<br>Serafin Zamora 190 [Dft]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4123f826722f4e8c9f6929f225c2694b = L.marker(
+                [-33.51899742136595, -70.59702468465576],
+                {}
+            ).addTo(marker_cluster_e439b03c2df5438b903680300676d161);
+        
+    
+            var icon_de093f78609a4384a7f64988c0f2cdda = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4123f826722f4e8c9f6929f225c2694b.setIcon(icon_de093f78609a4384a7f64988c0f2cdda);
+        
+    
+            marker_4123f826722f4e8c9f6929f225c2694b.bindTooltip(
+                `<div>
+                     Maquina: PSL1093-6 Tipo Maq: Snack Lata<br>Cliente: 11319<br>Serafin Zamora 190 [Dft]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b122a0cf223b41b9a4a4acfcb92a0a88 = L.marker(
+                [-33.5190332, -70.5970676],
+                {}
+            ).addTo(marker_cluster_e439b03c2df5438b903680300676d161);
+        
+    
+            var icon_ba3293c70e174ce58ba3480866569333 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b122a0cf223b41b9a4a4acfcb92a0a88.setIcon(icon_ba3293c70e174ce58ba3480866569333);
+        
+    
+            marker_b122a0cf223b41b9a4a4acfcb92a0a88.bindTooltip(
+                `<div>
+                     Maquina: MIH1099-4 Tipo Maq: Snack Lata<br>Cliente: 11319<br>Serafin Zamora 190 [Dft]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6a34b4723ed34589a2935fc82ad8bb5c = L.marker(
+                [-33.5190332, -70.5970676],
+                {}
+            ).addTo(marker_cluster_e439b03c2df5438b903680300676d161);
+        
+    
+            var icon_fb3cfc9f4f294c23ac49e3ab124415fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6a34b4723ed34589a2935fc82ad8bb5c.setIcon(icon_fb3cfc9f4f294c23ac49e3ab124415fd);
+        
+    
+            marker_6a34b4723ed34589a2935fc82ad8bb5c.bindTooltip(
+                `<div>
+                     Maquina: CTO1090-2 Tipo Maq: Liquido<br>Cliente: 11319<br>Serafin Zamora 190 [Dft]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8b49332c27af4f729912959d4564b1c9 = L.marker(
+                [-33.5190332, -70.5970676],
+                {}
+            ).addTo(marker_cluster_e439b03c2df5438b903680300676d161);
+        
+    
+            var icon_3319f39b0112423eb2dd03f5e9c59668 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8b49332c27af4f729912959d4564b1c9.setIcon(icon_3319f39b0112423eb2dd03f5e9c59668);
+        
+    
+            marker_8b49332c27af4f729912959d4564b1c9.bindTooltip(
+                `<div>
+                     Maquina: MIR1008-5 Tipo Maq: Snack Lata<br>Cliente: 11319<br>Serafin Zamora 190 [Dft]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ba532b84c1ce40cf913c11f3d62d484f = L.marker(
+                [-33.5190332, -70.5970676],
+                {}
+            ).addTo(marker_cluster_e439b03c2df5438b903680300676d161);
+        
+    
+            var icon_4f7877b3498b4e0e99ae428a82196762 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ba532b84c1ce40cf913c11f3d62d484f.setIcon(icon_4f7877b3498b4e0e99ae428a82196762);
+        
+    
+            marker_ba532b84c1ce40cf913c11f3d62d484f.bindTooltip(
+                `<div>
+                     Maquina: CTO1056-9 Tipo Maq: Liquido<br>Cliente: 11319<br>Serafin Zamora 190 [Dft]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9cd7a101e8054d79b12fdf17c10d85be = L.marker(
+                [-33.518869972336866, -70.59679803558197],
+                {}
+            ).addTo(marker_cluster_e439b03c2df5438b903680300676d161);
+        
+    
+            var icon_1bea41d9ff474a9fa77dd0b188b93889 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9cd7a101e8054d79b12fdf17c10d85be.setIcon(icon_1bea41d9ff474a9fa77dd0b188b93889);
+        
+    
+            marker_9cd7a101e8054d79b12fdf17c10d85be.bindTooltip(
+                `<div>
+                     Maquina: MIH1083-9 Tipo Maq: Snack Lata<br>Cliente: 11319<br>Serafin Zamora 190 [Dft]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_12985c07e4a64dd2a70cbc8edbbfedf4 = L.marker(
+                [-33.518883389346136, -70.59684631534424],
+                {}
+            ).addTo(marker_cluster_e439b03c2df5438b903680300676d161);
+        
+    
+            var icon_27a9d9599e0b4250be4fc247d8b546b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_12985c07e4a64dd2a70cbc8edbbfedf4.setIcon(icon_27a9d9599e0b4250be4fc247d8b546b1);
+        
+    
+            marker_12985c07e4a64dd2a70cbc8edbbfedf4.bindTooltip(
+                `<div>
+                     Maquina: PSL1098-7 Tipo Maq: Snack Lata<br>Cliente: 11319<br>Serafin Zamora 190 [Dft]<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
